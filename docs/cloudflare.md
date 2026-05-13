@@ -1,12 +1,13 @@
 # Cloudflare deployment
 
-This repo deploys as a single Cloudflare Worker:
+This repo is set up for a single Cloudflare Worker deployment:
 
-- the React/Vite app is built into `dist/`
-- Worker static assets serve the frontend
-- Durable Objects provide the family room relay
+- Vite builds the React app into `dist/`.
+- Wrangler uploads `dist/` as Worker static assets.
+- The Worker also exposes `/api/room/:roomCode/:stream`.
+- The room relay uses a Durable Object named `ResonanceRoom`.
 
-## Deploy commands
+## Commands
 
 ```bash
 npm install
@@ -15,27 +16,15 @@ npx wrangler login
 npx wrangler deploy
 ```
 
-## Room relay
+The app uses the same origin relay by default. Do not set `VITE_RELAY_URL` unless you host the relay Worker separately from the frontend.
 
-The frontend uses same-origin requests by default:
+## Cloudflare resource used
 
-```txt
-/api/room/:roomCode/presence
-/api/room/:roomCode/live
-/api/room/:roomCode/chord
-/api/room/:roomCode/reaction
-```
+The Worker creates one Durable Object instance per room code. That gives each family music room a tiny shared state machine for:
 
-If the relay is unavailable in local dev, the app falls back to local storage so the UI remains testable.
+- `presence`
+- `live`
+- `chord`
+- `reaction`
 
-## Durable Object binding
-
-`wrangler.toml` defines:
-
-```toml
-[[durable_objects.bindings]]
-name = "RESONANCE_ROOMS"
-class_name = "ResonanceRoom"
-```
-
-Each room code gets its own tiny shared state machine.
+The frontend still falls back to local prototype storage if `/api/room/...` is unavailable, so local dev does not break.
