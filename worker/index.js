@@ -12,6 +12,7 @@ function json(data, status = 200) {
 
 function parseRoomPath(pathname) {
   const parts = pathname.split("/").filter(Boolean);
+  // /api/room/:roomCode/:kind
   if (parts.length < 4 || parts[0] !== "api" || parts[1] !== "room") return null;
   const roomCode = decodeURIComponent(parts[2] || "").trim().toUpperCase();
   const kind = decodeURIComponent(parts[3] || "").trim();
@@ -82,7 +83,7 @@ export class ResonanceRoom {
 }
 
 export default {
-  async fetch(request, env) {
+  async fetch(request, env, ctx) {
     const url = new URL(request.url);
 
     if (request.method === "OPTIONS") return new Response(null, { headers: JSON_HEADERS });
@@ -95,7 +96,9 @@ export default {
       return stub.fetch(request);
     }
 
-    if (env.ASSETS) return env.ASSETS.fetch(request);
+    if (env.ASSETS) {
+      return env.ASSETS.fetch(request);
+    }
 
     return json({ ok: true, service: "resonanx-relay" });
   },
