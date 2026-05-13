@@ -2,6 +2,7 @@ name = "resonanx"
 main = "worker/index.js"
 compatibility_date = "2026-05-13"
 
+# One Cloudflare Worker serves both the Vite static build and the realtime room relay.
 assets = { directory = "./dist", binding = "ASSETS" }
 
 [[durable_objects.bindings]]

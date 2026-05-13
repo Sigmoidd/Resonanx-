@@ -1,61 +1,19 @@
 # Resonanx
 
-**Resonanx** is the Cloudflare-ready family music room for **Resonance** and **Exodia Stage Hand**.
+**Resonanx** is the Cloudflare-ready build of the Resonance family music room for **Exodia Stage Hand**.
 
-It is designed to connect families through music. The player sees a warm stage interface, while family members can join by room code, watch the live performance glow, and send gentle encouragement that feeds directly into the sensory experience.
+It is a performance-first, family-first app for music connection:
 
-## Core modes
+- family join-in rooms by code
+- live player glow / target chord / session pulse
+- gentle family reactions that feed into the sensory experience
+- favorite performance saves
+- solo, local duo, remote lead, remote player, and family join-in modes
+- optional thermal band BLE support
 
-- **Player session** — the main player view with chord targets, bloom/glow, session logging, and favorite performance saves.
-- **Lead side** — a family musician or caregiver can send lead chord changes to the room.
-- **Family join-in** — family can watch live progress and send Spark, Applause, or Love.
+## What changed in this patch
 
-## Sensory feedback
-
-Family feedback is not just a chat message:
-
-- **Spark** creates a bloom pulse, soft tone, and optional device vibration.
-- **Applause** creates a stronger bloom/audio/haptic pulse.
-- **Love** creates a warmer halo, softer tone, and longer haptic pulse.
-
-The language stays compassionate: player, family, performance, room, session, join-in. No clinical family UI.
-
-## Cloudflare deploy
-
-This repo is set up as one Cloudflare Worker deployment:
-
-- Vite builds the React app into `dist/`.
-- Wrangler uploads `dist/` as Worker static assets.
-- The Worker exposes a room relay under `/api/room/:roomCode/:stream`.
-- The room relay uses a Durable Object named `ResonanceRoom`.
-
-```bash
-npm install
-npm run build
-npx wrangler login
-npx wrangler deploy
-```
-
-## Local dev
-
-```bash
-npm install
-npm run dev
-```
-
-Local development still works without the relay. If `/api/room` is unavailable, the app falls back to local prototype storage so the UI can be tested.
-
-## Repo structure
-
-```txt
-src/App.jsx          Main Resonanx app
-src/main.jsx         Vite React entrypoint
-worker/index.js      Cloudflare Worker + Durable Object relay
-wrangler.toml        Cloudflare Worker config
-docs/cloudflare.md   Deployment notes
-```
-
-## Cloudflare routes
+The previous family room prototype could fall back to local/shared storage. This patch adds a real Cloudflare relay path:
 
 ```txt
 /api/room/:roomCode/presence
@@ -64,4 +22,68 @@ docs/cloudflare.md   Deployment notes
 /api/room/:roomCode/reaction
 ```
 
+The Worker uses a Durable Object per room code. Family feedback is no longer just text:
+
+- ✦ Spark creates a bloom pulse and soft chime.
+- 👏 Applause creates a stronger bloom/audio/haptic/thermal pulse.
+- ❤️ Love creates a warm halo, softer harmonic chime, haptic pattern, and optional thermal success pulse.
+
+The language stays compassionate: family, player, performance, session, room, join-in. No medicalized family UI.
+
+## Local dev
+
+```bash
+npm install
+npm run dev
+```
+
+Local dev uses the app normally. If the `/api/room` relay is unavailable, room state falls back to local prototype storage so the UI can still be tested.
+
+## Cloudflare deploy
+
+```bash
+npm install
+npm run build
+npx wrangler login
+npx wrangler deploy
+```
+
+This deploys one Cloudflare Worker that serves both:
+
+1. the React/Vite static app from `dist/`
+2. the Durable Object family relay under `/api/room/...`
+
+## Repo structure
+
+```txt
+src/App.jsx          Main Resonance / Resonanx app
+src/main.jsx         Vite React entrypoint
+worker/index.js      Cloudflare Worker + Durable Object relay
+wrangler.toml        Cloudflare Worker config
+docs/cloudflare.md   Deployment notes
+```
+
+## Cloudflare binding
+
+`wrangler.toml` defines:
+
+```toml
+[[durable_objects.bindings]]
+name = "RESONANCE_ROOMS"
+class_name = "ResonanceRoom"
+```
+
 Each room code maps to its own Durable Object instance.
+
+## GitHub quick start
+
+```bash
+git init
+git add .
+git commit -m "Launch Resonanx family relay build"
+git branch -M main
+git remote add origin https://github.com/Sigmoidd/resonanx.git
+git push -u origin main
+```
+
+If the GitHub repo does not exist yet, create `Sigmoidd/resonanx` first, then run the push commands.
