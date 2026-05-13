@@ -1,0 +1,13 @@
+name = "resonanx"
+main = "worker/index.js"
+compatibility_date = "2026-05-13"
+
+assets = { directory = "./dist", binding = "ASSETS" }
+
+[[durable_objects.bindings]]
+name = "RESONANCE_ROOMS"
+class_name = "ResonanceRoom"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["ResonanceRoom"]
