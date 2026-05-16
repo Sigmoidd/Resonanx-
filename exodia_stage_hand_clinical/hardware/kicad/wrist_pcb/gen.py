@@ -1,5 +1,10 @@
-(kicad_sch (version 20231120) (generator "kicad_sch")
-  (uuid "f60c9103-b326-4e03-aa56-21413cf10f28")
+import uuid
+
+def u():
+    return str(uuid.uuid4())
+
+sch = f"""(kicad_sch (version 20231120) (generator "kicad_sch")
+  (uuid "{u()}")
   (paper "A4")
   (title_block
     (title "Exodia Stage Hand - Clinical Wrist PCB")
@@ -86,76 +91,34 @@
       )
     )
   )
+"""
 
-  (symbol (lib_id "ESP32S3_MODULE") (at 150 100 0) (unit 1) (in_bom yes) (on_board yes)
-    (uuid "fad6fb95-1690-4261-925a-c6db048ca842")
-    (property "Reference" "U1" (id 0) (at 150 92 0) (effects (font (size 1.27 1.27))))
-    (property "Value" "ESP32S3_MODULE" (id 1) (at 150 108 0) (effects (font (size 1.27 1.27))))
-    (property "Footprint" "" (id 2) (at 150 100 0) (effects (hide yes)))
-    (property "Datasheet" "" (id 3) (at 150 100 0) (effects (hide yes)))
-  )
+components = [
+    ("U1", "ESP32S3_MODULE", 150, 100),
+    ("U2", "TP4056_IC", 50, 100),
+    ("Q1", "IRLZ44N", 150, 130),
+    ("Q2", "2N7002", 150, 150),
+    ("Q3", "2N7002", 170, 150),
+    ("Q4", "2N7002", 190, 150),
+    ("Q5", "2N7002", 210, 150),
+    ("R1", "R_10K", 100, 130),
+    ("RT1", "NTC", 100, 145),
+]
 
-  (symbol (lib_id "TP4056_IC") (at 50 100 0) (unit 1) (in_bom yes) (on_board yes)
-    (uuid "1d8dcbfc-9de5-4b44-a9af-3ef66d870280")
-    (property "Reference" "U2" (id 0) (at 50 92 0) (effects (font (size 1.27 1.27))))
-    (property "Value" "TP4056_IC" (id 1) (at 50 108 0) (effects (font (size 1.27 1.27))))
-    (property "Footprint" "" (id 2) (at 50 100 0) (effects (hide yes)))
-    (property "Datasheet" "" (id 3) (at 50 100 0) (effects (hide yes)))
+for ref, sym, x, y in components:
+    sch += f"""
+  (symbol (lib_id "{sym}") (at {x} {y} 0) (unit 1) (in_bom yes) (on_board yes)
+    (uuid "{u()}")
+    (property "Reference" "{ref}" (id 0) (at {x} {y-8} 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "{sym}" (id 1) (at {x} {y+8} 0) (effects (font (size 1.27 1.27))))
+    (property "Footprint" "" (id 2) (at {x} {y} 0) (effects (hide yes)))
+    (property "Datasheet" "" (id 3) (at {x} {y} 0) (effects (hide yes)))
   )
+"""
 
-  (symbol (lib_id "IRLZ44N") (at 150 130 0) (unit 1) (in_bom yes) (on_board yes)
-    (uuid "832400c3-d85c-4024-969b-72b05a70d726")
-    (property "Reference" "Q1" (id 0) (at 150 122 0) (effects (font (size 1.27 1.27))))
-    (property "Value" "IRLZ44N" (id 1) (at 150 138 0) (effects (font (size 1.27 1.27))))
-    (property "Footprint" "" (id 2) (at 150 130 0) (effects (hide yes)))
-    (property "Datasheet" "" (id 3) (at 150 130 0) (effects (hide yes)))
-  )
+sch += ")\n"
 
-  (symbol (lib_id "2N7002") (at 150 150 0) (unit 1) (in_bom yes) (on_board yes)
-    (uuid "e47bb11b-8da2-4e02-b153-ec3301657a28")
-    (property "Reference" "Q2" (id 0) (at 150 142 0) (effects (font (size 1.27 1.27))))
-    (property "Value" "2N7002" (id 1) (at 150 158 0) (effects (font (size 1.27 1.27))))
-    (property "Footprint" "" (id 2) (at 150 150 0) (effects (hide yes)))
-    (property "Datasheet" "" (id 3) (at 150 150 0) (effects (hide yes)))
-  )
+with open("c:/Users/Admin/Documents/resonanx/exodia_stage_hand_clinical/hardware/kicad/wrist_pcb/wrist_pcb.kicad_sch", "w") as f:
+    f.write(sch)
 
-  (symbol (lib_id "2N7002") (at 170 150 0) (unit 1) (in_bom yes) (on_board yes)
-    (uuid "6200671b-ce03-4a99-9ca3-f466e2dad199")
-    (property "Reference" "Q3" (id 0) (at 170 142 0) (effects (font (size 1.27 1.27))))
-    (property "Value" "2N7002" (id 1) (at 170 158 0) (effects (font (size 1.27 1.27))))
-    (property "Footprint" "" (id 2) (at 170 150 0) (effects (hide yes)))
-    (property "Datasheet" "" (id 3) (at 170 150 0) (effects (hide yes)))
-  )
-
-  (symbol (lib_id "2N7002") (at 190 150 0) (unit 1) (in_bom yes) (on_board yes)
-    (uuid "bc8f4fa0-451a-4b5c-b138-c7d185e040a9")
-    (property "Reference" "Q4" (id 0) (at 190 142 0) (effects (font (size 1.27 1.27))))
-    (property "Value" "2N7002" (id 1) (at 190 158 0) (effects (font (size 1.27 1.27))))
-    (property "Footprint" "" (id 2) (at 190 150 0) (effects (hide yes)))
-    (property "Datasheet" "" (id 3) (at 190 150 0) (effects (hide yes)))
-  )
-
-  (symbol (lib_id "2N7002") (at 210 150 0) (unit 1) (in_bom yes) (on_board yes)
-    (uuid "f00faf37-0ed3-457c-bd93-12c3c3383438")
-    (property "Reference" "Q5" (id 0) (at 210 142 0) (effects (font (size 1.27 1.27))))
-    (property "Value" "2N7002" (id 1) (at 210 158 0) (effects (font (size 1.27 1.27))))
-    (property "Footprint" "" (id 2) (at 210 150 0) (effects (hide yes)))
-    (property "Datasheet" "" (id 3) (at 210 150 0) (effects (hide yes)))
-  )
-
-  (symbol (lib_id "R_10K") (at 100 130 0) (unit 1) (in_bom yes) (on_board yes)
-    (uuid "a91beb44-37f4-4b5b-bde1-e6cfb3c4d482")
-    (property "Reference" "R1" (id 0) (at 100 122 0) (effects (font (size 1.27 1.27))))
-    (property "Value" "R_10K" (id 1) (at 100 138 0) (effects (font (size 1.27 1.27))))
-    (property "Footprint" "" (id 2) (at 100 130 0) (effects (hide yes)))
-    (property "Datasheet" "" (id 3) (at 100 130 0) (effects (hide yes)))
-  )
-
-  (symbol (lib_id "NTC") (at 100 145 0) (unit 1) (in_bom yes) (on_board yes)
-    (uuid "851866e9-0952-4b0e-9580-39e2148d18d9")
-    (property "Reference" "RT1" (id 0) (at 100 137 0) (effects (font (size 1.27 1.27))))
-    (property "Value" "NTC" (id 1) (at 100 153 0) (effects (font (size 1.27 1.27))))
-    (property "Footprint" "" (id 2) (at 100 145 0) (effects (hide yes)))
-    (property "Datasheet" "" (id 3) (at 100 145 0) (effects (hide yes)))
-  )
-)
+print("Generated KiCad schematic successfully.")
