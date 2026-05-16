@@ -1,0 +1,266 @@
+(kicad_sch
+  (version 20231120)
+  (generator "kicad_sch")
+  (paper "A4")
+  (title_block
+    (title "Exodia Stage Hand — Clinical Wrist PCB")
+    (date "2026-05-15")
+    (rev "v1.0")
+    (company "Resonanx")
+    (comment 1 "Memory Care Edition — Single ESP32-S3, Rigid+Flex split")
+    (comment 2 "Board 1 of 2: Rigid Wrist PCB")
+  )
+
+  (lib_symbols
+    (symbol "ESP32S3_MODULE"
+      (pin_names (offset 1.016))
+      (in_bom yes) (on_board yes)
+      (property "Reference" "U1" (at 0 8 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "ESP32-S3-MINI-1" (at 0 -8 0) (effects (font (size 1.27 1.27))))
+      (symbol "ESP32S3_MODULE_0_1"
+        (rectangle (start -7 -7) (end 7 7) (stroke (width 0.254)) (fill (type background)))
+        (pin input line (at -10 4 0) (length 3) (name "GPIO4/HEATER_PWM") (number "1"))
+        (pin input line (at -10 2 0) (length 3) (name "GPIO5/NTC_ADC") (number "2"))
+        (pin input line (at -10 0 0) (length 3) (name "GPIO6/MOTOR_IDX") (number "3"))
+        (pin input line (at -10 -2 0) (length 3) (name "GPIO7/MOTOR_MID") (number "4"))
+        (pin input line (at -10 -4 0) (length 3) (name "GPIO15/MOTOR_RNG") (number "5"))
+        (pin input line (at -10 -6 0) (length 3) (name "GPIO16/MOTOR_PNK") (number "6"))
+        (pin input line (at 10 6 180) (length 3) (name "GPIO17/EMG_ADC") (number "7"))
+        (pin power_in line (at 10 4 180) (length 3) (name "3V3") (number "8"))
+        (pin power_in line (at 10 2 180) (length 3) (name "GND") (number "9"))
+        (pin passive line (at 10 0 180) (length 3) (name "EN") (number "10"))
+      )
+    )
+
+    (symbol "TP4056_IC"
+      (pin_names (offset 1.016))
+      (in_bom yes) (on_board yes)
+      (property "Reference" "U2" (at 0 5 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "TP4056" (at 0 -5 0) (effects (font (size 1.27 1.27))))
+      (symbol "TP4056_IC_0_1"
+        (rectangle (start -5 -4) (end 5 4) (stroke (width 0.254)) (fill (type background)))
+        (pin input line (at -8 2 0) (length 3) (name "VIN") (number "1"))
+        (pin output line (at -8 0 0) (length 3) (name "BAT+") (number "2"))
+        (pin output line (at -8 -2 0) (length 3) (name "BAT-") (number "3"))
+        (pin power_in line (at 8 2 180) (length 3) (name "GND") (number "4"))
+        (pin output line (at 8 0 180) (length 3) (name "CHRG_LED") (number "5"))
+        (pin output line (at 8 -2 180) (length 3) (name "STDBY_LED") (number "6"))
+      )
+    )
+
+    (symbol "IRLZ44N_MOSFET"
+      (pin_names (offset 1.016))
+      (in_bom yes) (on_board yes)
+      (property "Reference" "Q1" (at 0 4 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "IRLZ44N" (at 0 -4 0) (effects (font (size 1.27 1.27))))
+      (symbol "IRLZ44N_MOSFET_0_1"
+        (rectangle (start -3 -3) (end 3 3) (stroke (width 0.254)) (fill (type background)))
+        (pin input line (at -6 0 0) (length 3) (name "G") (number "1"))
+        (pin output line (at 6 2 180) (length 3) (name "D") (number "2"))
+        (pin passive line (at 6 -2 180) (length 3) (name "S") (number "3"))
+      )
+    )
+
+    (symbol "2N7002_MOSFET"
+      (pin_names (offset 1.016))
+      (in_bom yes) (on_board yes)
+      (property "Reference" "Q" (at 0 4 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "2N7002" (at 0 -4 0) (effects (font (size 1.27 1.27))))
+      (symbol "2N7002_MOSFET_0_1"
+        (rectangle (start -3 -3) (end 3 3) (stroke (width 0.254)) (fill (type background)))
+        (pin input line (at -6 0 0) (length 3) (name "G") (number "1"))
+        (pin output line (at 6 2 180) (length 3) (name "D") (number "2"))
+        (pin passive line (at 6 -2 180) (length 3) (name "S") (number "3"))
+      )
+    )
+
+    (symbol "NTC_THERMISTOR"
+      (pin_names (offset 1.016))
+      (in_bom yes) (on_board yes)
+      (property "Reference" "RT1" (at 0 3 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "NTC_10K_B3950" (at 0 -3 0) (effects (font (size 1.27 1.27))))
+      (symbol "NTC_THERMISTOR_0_1"
+        (rectangle (start -2 -2) (end 2 2) (stroke (width 0.254)) (fill (type background)))
+        (pin passive line (at -5 0 0) (length 3) (name "1") (number "1"))
+        (pin passive line (at 5 0 180) (length 3) (name "2") (number "2"))
+      )
+    )
+
+    (symbol "R_FIXED"
+      (pin_names (offset 1.016))
+      (in_bom yes) (on_board yes)
+      (property "Reference" "R" (at 0 2 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "10K" (at 0 -2 0) (effects (font (size 1.27 1.27))))
+      (symbol "R_FIXED_0_1"
+        (rectangle (start -1 -2) (end 1 2) (stroke (width 0.254)) (fill (type background)))
+        (pin passive line (at 0 -5 90) (length 3) (name "1") (number "1"))
+        (pin passive line (at 0 5 270) (length 3) (name "2") (number "2"))
+      )
+    )
+
+    (symbol "USBC_CONN"
+      (pin_names (offset 1.016))
+      (in_bom yes) (on_board yes)
+      (property "Reference" "J1" (at 0 5 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "USB_C_CHARGE" (at 0 -5 0) (effects (font (size 1.27 1.27))))
+      (symbol "USBC_CONN_0_1"
+        (rectangle (start -3 -4) (end 3 4) (stroke (width 0.254)) (fill (type background)))
+        (pin passive line (at -6 2 0) (length 3) (name "VBUS") (number "1"))
+        (pin passive line (at -6 -2 0) (length 3) (name "GND") (number "2"))
+      )
+    )
+
+    (symbol "ZIF_5PIN"
+      (pin_names (offset 1.016))
+      (in_bom yes) (on_board yes)
+      (property "Reference" "J2" (at 0 6 0) (effects (font (size 1.27 1.27))))
+      (property "Value" "ZIF_5PIN_0.5mm" (at 0 -6 0) (effects (font (size 1.27 1.27))))
+      (symbol "ZIF_5PIN_0_1"
+        (rectangle (start -3 -5) (end 3 5) (stroke (width 0.254)) (fill (type background)))
+        (pin passive line (at -6 4 0) (length 3) (name "V+") (number "1"))
+        (pin passive line (at -6 2 0) (length 3) (name "HEATER_GND") (number "2"))
+        (pin passive line (at -6 0 0) (length 3) (name "MOTOR_IDX_GND") (number "3"))
+        (pin passive line (at -6 -2 0) (length 3) (name "MOTOR_MID_GND") (number "4"))
+        (pin passive line (at -6 -4 0) (length 3) (name "MOTOR_RNG_PNK_GND") (number "5"))
+      )
+    )
+
+    (symbol "PWR_FLAG"
+      (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR" (at 0 3 0) (effects (font (size 1.27 1.27)) (hide yes)))
+      (property "Value" "PWR_FLAG" (at 0 -3 0) (effects (font (size 1.27 1.27))))
+      (symbol "PWR_FLAG_0_1"
+        (pin power_in line (at 0 0 270) (length 0) (name "PWR") (number "1"))
+        (polyline (pts (xy 0 0) (xy 0 2.032) (xy 1.016 1.524) (xy 0 2.032) (xy -1.016 1.524)))
+      )
+    )
+
+    (symbol "VCC"
+      (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR" (at 0 3 0) (effects (font (size 1.27 1.27)) (hide yes)))
+      (property "Value" "VCC" (at 0 2 0) (effects (font (size 1.27 1.27))))
+      (symbol "VCC_0_1"
+        (pin power_in line (at 0 0 270) (length 0) (name "VCC") (number "1"))
+        (polyline (pts (xy -1.016 1.016) (xy 0 2.54) (xy 1.016 1.016)))
+        (polyline (pts (xy 0 0) (xy 0 2.54)))
+      )
+    )
+
+    (symbol "GND"
+      (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR" (at 0 -3 0) (effects (font (size 1.27 1.27)) (hide yes)))
+      (property "Value" "GND" (at 0 -2 0) (effects (font (size 1.27 1.27))))
+      (symbol "GND_0_1"
+        (pin power_in line (at 0 0 90) (length 0) (name "GND") (number "1"))
+        (polyline (pts (xy -1.016 -1.016) (xy 0 -2.54) (xy 1.016 -1.016)))
+        (polyline (pts (xy 0 0) (xy 0 -2.54)))
+      )
+    )
+  )
+
+  (symbol (lib_id "USBC_CONN") (at 25 170 0) (unit 1)
+    (property "Reference" "J1" (at 25 163 0))
+    (property "Value" "USB_C_CHARGE_IN" (at 25 177 0))
+  )
+
+  (symbol (lib_id "TP4056_IC") (at 55 170 0) (unit 1)
+    (property "Reference" "U2" (at 55 163 0))
+    (property "Value" "TP4056" (at 55 177 0))
+  )
+
+  (symbol (lib_id "PWR_FLAG") (at 80 155 0) (unit 1)
+    (property "Reference" "#PWR01" (at 80 152 0))
+    (property "Value" "VBAT_SW" (at 80 158 0))
+  )
+
+  (symbol (lib_id "ESP32S3_MODULE") (at 120 130 0) (unit 1)
+    (property "Reference" "U1" (at 120 120 0))
+    (property "Value" "ESP32-S3-MINI-1" (at 120 142 0))
+  )
+
+  (symbol (lib_id "IRLZ44N_MOSFET") (at 165 100 0) (unit 1)
+    (property "Reference" "Q1" (at 165 95 0))
+    (property "Value" "IRLZ44N_HEATER" (at 165 107 0))
+  )
+
+  (symbol (lib_id "2N7002_MOSFET") (at 165 120 0) (unit 1)
+    (property "Reference" "Q2" (at 165 115 0))
+    (property "Value" "2N7002_IDX" (at 165 127 0))
+  )
+  (symbol (lib_id "2N7002_MOSFET") (at 165 135 0) (unit 1)
+    (property "Reference" "Q3" (at 165 130 0))
+    (property "Value" "2N7002_MID" (at 165 142 0))
+  )
+  (symbol (lib_id "2N7002_MOSFET") (at 165 150 0) (unit 1)
+    (property "Reference" "Q4" (at 165 145 0))
+    (property "Value" "2N7002_RNG" (at 165 157 0))
+  )
+  (symbol (lib_id "2N7002_MOSFET") (at 165 165 0) (unit 1)
+    (property "Reference" "Q5" (at 165 160 0))
+    (property "Value" "2N7002_PNK" (at 165 172 0))
+  )
+
+  (symbol (lib_id "R_FIXED") (at 85 100 0) (unit 1)
+    (property "Reference" "R1" (at 82 100 0))
+    (property "Value" "10K" (at 88 100 0))
+  )
+  (symbol (lib_id "NTC_THERMISTOR") (at 85 110 0) (unit 1)
+    (property "Reference" "RT1" (at 82 110 0))
+    (property "Value" "NTC_10K_B3950" (at 88 110 0))
+  )
+
+  (symbol (lib_id "ZIF_5PIN") (at 200 130 0) (unit 1)
+    (property "Reference" "J2" (at 200 122 0))
+    (property "Value" "ZIF_5PIN_FLEX_HARNESS" (at 200 140 0))
+  )
+
+  (symbol (lib_id "VCC") (at 80 148 0) (unit 1)
+    (property "Reference" "#PWR02" (at 80 148 0) (effects (hide yes)))
+    (property "Value" "VCC" (at 80 145 0))
+  )
+  (symbol (lib_id "GND") (at 120 185 0) (unit 1)
+    (property "Reference" "#PWR03" (at 120 185 0) (effects (hide yes)))
+    (property "Value" "GND" (at 120 188 0))
+  )
+
+  (wire (pts (xy 31 170) (xy 47 170)))
+  (wire (pts (xy 63 168) (xy 80 168) (xy 80 152)))
+  (wire (pts (xy 80 152) (xy 110 130)))
+  (wire (pts (xy 110 126) (xy 159 100)))
+  (wire (pts (xy 110 122) (xy 159 120)))
+  (wire (pts (xy 110 120) (xy 159 135)))
+  (wire (pts (xy 110 118) (xy 159 150)))
+  (wire (pts (xy 110 116) (xy 159 165)))
+  (wire (pts (xy 110 128) (xy 90 115) (xy 90 110)))
+  (wire (pts (xy 85 95) (xy 85 90)))
+  (wire (pts (xy 85 90) (xy 80 90) (xy 80 152)))
+  (wire (pts (xy 85 115) (xy 85 120) (xy 120 120) (xy 120 185)))
+  (wire (pts (xy 171 98) (xy 194 128)))
+  (wire (pts (xy 171 118) (xy 194 126)))
+  (wire (pts (xy 171 133) (xy 194 124)))
+  (wire (pts (xy 171 148) (xy 194 122)))
+  (wire (pts (xy 171 163) (xy 194 120)))
+  (wire (pts (xy 80 152) (xy 194 132)))
+  (wire (pts (xy 171 102) (xy 171 185) (xy 120 185)))
+  (wire (pts (xy 171 122) (xy 171 185)))
+  (wire (pts (xy 171 137) (xy 171 185)))
+  (wire (pts (xy 171 152) (xy 171 185)))
+  (wire (pts (xy 171 167) (xy 171 185)))
+  (wire (pts (xy 25 174) (xy 25 185) (xy 120 185)))
+
+  (label "HEATER_PWM" (at 130 126 0) (effects (font (size 1.27 1.27))))
+  (label "MOTOR_IDX_PWM" (at 130 122 0) (effects (font (size 1.27 1.27))))
+  (label "MOTOR_MID_PWM" (at 130 120 0) (effects (font (size 1.27 1.27))))
+  (label "MOTOR_RNG_PWM" (at 130 118 0) (effects (font (size 1.27 1.27))))
+  (label "MOTOR_PNK_PWM" (at 130 116 0) (effects (font (size 1.27 1.27))))
+  (label "NTC_ADC" (at 105 128 0) (effects (font (size 1.27 1.27))))
+  (label "TO_FLEX_HARNESS" (at 208 130 0) (effects (font (size 1.27 1.27))))
+
+  (text "THERMAL SAFETY:\nFirmware cutoff at 40C\nNTC sensor fail = heater OFF\nBLE timeout 30s = all OFF"
+    (at 20 100 0) (effects (font (size 1.27 1.27)) (justify left)))
+  (text "ALL JOINTS: Apply MG Chemicals 422B\nconformal coat after assembly.\nCure 30 min minimum."
+    (at 20 115 0) (effects (font (size 1.27 1.27)) (justify left)))
+  (text "ZIF J2 -> Flex Finger Harness\n(1-layer polyimide, coverlay both sides)\nBond harness to glove with 3M 9485PC tape."
+    (at 210 120 0) (effects (font (size 1.27 1.27)) (justify left)))
+
+)
