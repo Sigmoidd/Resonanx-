@@ -1,10 +1,10 @@
 (kicad_sch (version 20231120) (generator "kicad_sch")
-  (uuid "1401aaae-ab32-4d96-a98d-0985362b8a22")
+  (uuid "1b044682-1fb9-4ebf-a030-7715eef75fe1")
   (paper "A4")
   (title_block
     (title "Exodia Stage Hand - Clinical Wrist PCB")
     (date "2026-05-15")
-    (rev "v1.1")
+    (rev "v1.2")
     (company "Resonanx")
   )
   (lib_symbols
@@ -16,12 +16,12 @@
       (symbol "ESP32S3_MODULE_0_1"
         (rectangle (start -10.16 -10.16) (end 10.16 10.16) (stroke (width 0) (type default)) (fill (type background)))
         (pin output line (at -15.24 5.08 0) (length 5.08) (name "GPIO4") (number "1"))
-        (pin input line (at -15.24 2.54 0) (length 5.08) (name "GPIO5") (number "2"))
+        (pin passive line (at -15.24 2.54 0) (length 5.08) (name "GPIO5") (number "2"))
         (pin output line (at -15.24 0 0) (length 5.08) (name "GPIO6") (number "3"))
         (pin output line (at -15.24 -2.54 0) (length 5.08) (name "GPIO7") (number "4"))
         (pin output line (at -15.24 -5.08 0) (length 5.08) (name "GPIO15") (number "5"))
         (pin output line (at -15.24 -7.62 0) (length 5.08) (name "GPIO16") (number "6"))
-        (pin input line (at 15.24 5.08 180) (length 5.08) (name "GPIO17") (number "7"))
+        (pin passive line (at 15.24 5.08 180) (length 5.08) (name "GPIO17") (number "7"))
         (pin power_in line (at 15.24 2.54 180) (length 5.08) (name "3V3") (number "8"))
         (pin power_in line (at 15.24 0 180) (length 5.08) (name "GND") (number "9"))
       )
@@ -33,10 +33,10 @@
       (property "Datasheet" "" (id 3) (at 0 0 0) (effects (hide yes)))
       (symbol "TP4056_IC_0_1"
         (rectangle (start -5.08 -5.08) (end 5.08 5.08) (stroke (width 0) (type default)) (fill (type background)))
-        (pin power_in line (at -10.16 2.54 0) (length 5.08) (name "VIN") (number "1"))
-        (pin power_out line (at -10.16 -2.54 0) (length 5.08) (name "BAT+") (number "2"))
-        (pin power_out line (at 10.16 2.54 180) (length 5.08) (name "BAT-") (number "3"))
-        (pin power_in line (at 10.16 -2.54 180) (length 5.08) (name "GND") (number "4"))
+        (pin passive line (at -10.16 2.54 0) (length 5.08) (name "VIN") (number "1"))
+        (pin passive line (at -10.16 -2.54 0) (length 5.08) (name "BAT+") (number "2"))
+        (pin passive line (at 10.16 2.54 180) (length 5.08) (name "BAT-") (number "3"))
+        (pin passive line (at 10.16 -2.54 180) (length 5.08) (name "GND") (number "4"))
       )
     )
     (symbol "IRLZ44N" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
@@ -92,8 +92,8 @@
       (property "Datasheet" "" (id 3) (at 0 0 0) (effects (hide yes)))
       (symbol "USBC_CONN_0_1"
         (rectangle (start -2.54 -2.54) (end 2.54 2.54) (stroke (width 0) (type default)) (fill (type background)))
-        (pin power_out line (at -7.62 2.54 0) (length 5.08) (name "VBUS") (number "1"))
-        (pin power_out line (at -7.62 -2.54 0) (length 5.08) (name "GND") (number "2"))
+        (pin passive line (at -7.62 2.54 0) (length 5.08) (name "VBUS") (number "1"))
+        (pin passive line (at -7.62 -2.54 0) (length 5.08) (name "GND") (number "2"))
       )
     )
     (symbol "ZIF_5PIN" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
@@ -123,7 +123,7 @@
   )
 
   (symbol (lib_id "ESP32S3_MODULE") (at 152.4 76.2 0) (unit 1) (in_bom yes) (on_board yes)
-    (uuid "98513134-b8bf-496a-983c-080007a9ae7a")
+    (uuid "85397f20-0853-48d4-82e1-da31a131987e")
     (property "Reference" "U1" (id 0) (at 152.4 66.04 0) (effects (font (size 1.27 1.27))))
     (property "Value" "ESP32S3_MODULE" (id 1) (at 152.4 86.36 0) (effects (font (size 1.27 1.27))))
     (property "Footprint" "" (id 2) (at 152.4 76.2 0) (effects (hide yes)))
@@ -131,7 +131,7 @@
   )
 
   (symbol (lib_id "TP4056_IC") (at 60.96 76.2 0) (unit 1) (in_bom yes) (on_board yes)
-    (uuid "db326c52-8bd4-484a-bd9f-e887c0a3c0f2")
+    (uuid "f3d0ca17-3eed-4310-ba53-a5ffbae4b23e")
     (property "Reference" "U2" (id 0) (at 60.96 66.04 0) (effects (font (size 1.27 1.27))))
     (property "Value" "TP4056_IC" (id 1) (at 60.96 86.36 0) (effects (font (size 1.27 1.27))))
     (property "Footprint" "" (id 2) (at 60.96 76.2 0) (effects (hide yes)))
@@ -139,7 +139,7 @@
   )
 
   (symbol (lib_id "USBC_CONN") (at 30.48 76.2 0) (unit 1) (in_bom yes) (on_board yes)
-    (uuid "ae07adfd-5b7e-45a6-ad1f-42f809229274")
+    (uuid "4d714fbc-e81f-4947-9c91-5e51f0e14455")
     (property "Reference" "J1" (id 0) (at 30.48 66.04 0) (effects (font (size 1.27 1.27))))
     (property "Value" "USBC_CONN" (id 1) (at 30.48 86.36 0) (effects (font (size 1.27 1.27))))
     (property "Footprint" "" (id 2) (at 30.48 76.2 0) (effects (hide yes)))
@@ -147,7 +147,7 @@
   )
 
   (symbol (lib_id "ZIF_5PIN") (at 233.68 137.16 0) (unit 1) (in_bom yes) (on_board yes)
-    (uuid "97872c48-bfc0-4555-b0af-3db04cfaf06b")
+    (uuid "88369947-e9fe-471b-95a9-082308671188")
     (property "Reference" "J2" (id 0) (at 233.68 127.0 0) (effects (font (size 1.27 1.27))))
     (property "Value" "ZIF_5PIN" (id 1) (at 233.68 147.32 0) (effects (font (size 1.27 1.27))))
     (property "Footprint" "" (id 2) (at 233.68 137.16 0) (effects (hide yes)))
@@ -155,7 +155,7 @@
   )
 
   (symbol (lib_id "IRLZ44N") (at 152.4 137.16 0) (unit 1) (in_bom yes) (on_board yes)
-    (uuid "ae91cc51-7103-4cfe-b115-67979fddc3c5")
+    (uuid "42714a0b-0968-459a-8b3f-446f3c242f5b")
     (property "Reference" "Q1" (id 0) (at 152.4 127.0 0) (effects (font (size 1.27 1.27))))
     (property "Value" "IRLZ44N" (id 1) (at 152.4 147.32 0) (effects (font (size 1.27 1.27))))
     (property "Footprint" "" (id 2) (at 152.4 137.16 0) (effects (hide yes)))
@@ -163,7 +163,7 @@
   )
 
   (symbol (lib_id "2N7002") (at 132.08 167.64 0) (unit 1) (in_bom yes) (on_board yes)
-    (uuid "6c55811a-6a0c-4692-aebd-74a571450942")
+    (uuid "316464f9-5ce4-477f-9624-de1ab4c47241")
     (property "Reference" "Q2" (id 0) (at 132.08 157.48 0) (effects (font (size 1.27 1.27))))
     (property "Value" "2N7002" (id 1) (at 132.08 177.79999999999998 0) (effects (font (size 1.27 1.27))))
     (property "Footprint" "" (id 2) (at 132.08 167.64 0) (effects (hide yes)))
@@ -171,7 +171,7 @@
   )
 
   (symbol (lib_id "2N7002") (at 152.4 167.64 0) (unit 1) (in_bom yes) (on_board yes)
-    (uuid "80e81462-8371-4915-97bb-3bb76fffd3ff")
+    (uuid "27379c39-29c5-4008-98eb-1d79c0144687")
     (property "Reference" "Q3" (id 0) (at 152.4 157.48 0) (effects (font (size 1.27 1.27))))
     (property "Value" "2N7002" (id 1) (at 152.4 177.79999999999998 0) (effects (font (size 1.27 1.27))))
     (property "Footprint" "" (id 2) (at 152.4 167.64 0) (effects (hide yes)))
@@ -179,7 +179,7 @@
   )
 
   (symbol (lib_id "2N7002") (at 172.72 167.64 0) (unit 1) (in_bom yes) (on_board yes)
-    (uuid "254ffc3b-efa4-483b-b0f8-8a41a0abb84f")
+    (uuid "e999e433-f013-4b97-895d-3cf921621954")
     (property "Reference" "Q4" (id 0) (at 172.72 157.48 0) (effects (font (size 1.27 1.27))))
     (property "Value" "2N7002" (id 1) (at 172.72 177.79999999999998 0) (effects (font (size 1.27 1.27))))
     (property "Footprint" "" (id 2) (at 172.72 167.64 0) (effects (hide yes)))
@@ -187,7 +187,7 @@
   )
 
   (symbol (lib_id "2N7002") (at 193.04 167.64 0) (unit 1) (in_bom yes) (on_board yes)
-    (uuid "ff3e3576-23d6-43c2-bf16-c623d5ee9910")
+    (uuid "cb52de33-8295-4883-924c-ff9ccde96a50")
     (property "Reference" "Q5" (id 0) (at 193.04 157.48 0) (effects (font (size 1.27 1.27))))
     (property "Value" "2N7002" (id 1) (at 193.04 177.79999999999998 0) (effects (font (size 1.27 1.27))))
     (property "Footprint" "" (id 2) (at 193.04 167.64 0) (effects (hide yes)))
@@ -195,7 +195,7 @@
   )
 
   (symbol (lib_id "R_10K") (at 101.6 137.16 0) (unit 1) (in_bom yes) (on_board yes)
-    (uuid "25871b68-fcf8-4cb5-a89d-ef41124e6f5f")
+    (uuid "9e9ddf49-c30a-4910-a4e4-1ce9870be282")
     (property "Reference" "R1" (id 0) (at 101.6 127.0 0) (effects (font (size 1.27 1.27))))
     (property "Value" "R_10K" (id 1) (at 101.6 147.32 0) (effects (font (size 1.27 1.27))))
     (property "Footprint" "" (id 2) (at 101.6 137.16 0) (effects (hide yes)))
@@ -203,7 +203,7 @@
   )
 
   (symbol (lib_id "NTC") (at 101.6 157.48 0) (unit 1) (in_bom yes) (on_board yes)
-    (uuid "c00be16e-bc41-430c-b4f9-08579ff694a9")
+    (uuid "24d15451-1fc9-47e8-b936-b17cb310e767")
     (property "Reference" "RT1" (id 0) (at 101.6 147.32 0) (effects (font (size 1.27 1.27))))
     (property "Value" "NTC" (id 1) (at 101.6 167.64 0) (effects (font (size 1.27 1.27))))
     (property "Footprint" "" (id 2) (at 101.6 157.48 0) (effects (hide yes)))
@@ -211,7 +211,7 @@
   )
 
   (symbol (lib_id "PWR_FLAG") (at 81.28 55.88 0) (unit 1) (in_bom yes) (on_board yes)
-    (uuid "4bccecf5-0e0a-4d3c-85b5-048aa4faba46")
+    (uuid "47b513f6-77ca-4ef4-8278-4aa429042284")
     (property "Reference" "#FLG1" (id 0) (at 81.28 45.72 0) (effects (font (size 1.27 1.27))))
     (property "Value" "PWR_FLAG" (id 1) (at 81.28 66.04 0) (effects (font (size 1.27 1.27))))
     (property "Footprint" "" (id 2) (at 81.28 55.88 0) (effects (hide yes)))
@@ -219,99 +219,99 @@
   )
 
   (symbol (lib_id "PWR_FLAG") (at 81.28 66.04 0) (unit 1) (in_bom yes) (on_board yes)
-    (uuid "59a0da11-8f2e-4463-8b53-7ac553c8ff38")
+    (uuid "cee2ca40-d6e9-4678-8c48-2a7b1ad8cb5f")
     (property "Reference" "#FLG2" (id 0) (at 81.28 55.88000000000001 0) (effects (font (size 1.27 1.27))))
     (property "Value" "PWR_FLAG" (id 1) (at 81.28 76.2 0) (effects (font (size 1.27 1.27))))
     (property "Footprint" "" (id 2) (at 81.28 66.04 0) (effects (hide yes)))
     (property "Datasheet" "" (id 3) (at 81.28 66.04 0) (effects (hide yes)))
   )
 
-  (text "POWER MANAGEMENT" (at 45.72 60.96 0) (effects (font (size 2 2)) (justify left)) (uuid "8b7e8e2c-66cf-4919-802a-b600b31d93a0"))
-  (text "MAIN BRAIN (ESP32-S3)" (at 132.08 60.96 0) (effects (font (size 2 2)) (justify left)) (uuid "86c1c21f-bb65-46d8-be58-6269f3ed6992"))
-  (text "HEATER MOSFET" (at 142.24 127 0) (effects (font (size 1.5 1.5)) (justify left)) (uuid "2887c53e-a3cc-412c-a92d-e7932975d554"))
-  (text "MOTOR MOSFETs" (at 142.24 154.94 0) (effects (font (size 1.5 1.5)) (justify left)) (uuid "75858612-0bba-4945-9cac-cbd7c5d2067e"))
-  (text "NTC DIVIDER" (at 91.44 127 0) (effects (font (size 1.5 1.5)) (justify left)) (uuid "c1f8a7d5-6be5-4535-8cd7-648b9fa15e35"))
-  (text "FLEX HARNESS INTERFACE" (at 218.44 121.92 0) (effects (font (size 1.5 1.5)) (justify left)) (uuid "f33c00a0-a691-4dfb-b449-49613dd5342c"))
+  (text "POWER MANAGEMENT" (at 45.72 60.96 0) (effects (font (size 2 2)) (justify left)) (uuid "777af64c-4550-46f1-8633-b0e8c938f984"))
+  (text "MAIN BRAIN (ESP32-S3)" (at 132.08 60.96 0) (effects (font (size 2 2)) (justify left)) (uuid "83c61484-3363-4dc7-8816-1fca89a26e58"))
+  (text "HEATER MOSFET" (at 142.24 127 0) (effects (font (size 1.5 1.5)) (justify left)) (uuid "c077f54d-8660-4557-837e-23b6241049c7"))
+  (text "MOTOR MOSFETs" (at 142.24 154.94 0) (effects (font (size 1.5 1.5)) (justify left)) (uuid "5fb419e0-f90c-49a3-be97-cc5988c7dd06"))
+  (text "NTC DIVIDER" (at 91.44 127 0) (effects (font (size 1.5 1.5)) (justify left)) (uuid "feb4f24b-55cf-4281-bcc3-e38620b99d45"))
+  (text "FLEX HARNESS INTERFACE" (at 218.44 121.92 0) (effects (font (size 1.5 1.5)) (justify left)) (uuid "5824ef64-c7b6-43f0-9dd4-b757e2ff4d86"))
 
-  (label "VBUS" (at 22.86 73.66 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "3e4a7390-502b-465c-a089-82611cdc601b"))
+  (label "VBUS" (at 22.86 73.66 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "ea94139b-ea23-4631-b989-e6828784a727"))
 
-  (label "GND" (at 22.86 78.74000000000001 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "cc84070d-628a-4856-be6e-d6b691e881a6"))
+  (label "GND" (at 22.86 78.74000000000001 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "d8a24376-a78d-413d-a89e-8289716b1563"))
 
-  (label "VBUS" (at 50.8 73.66 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "14a806cd-1a51-4119-bba8-ac77ebf26042"))
+  (label "VBUS" (at 50.8 73.66 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "452c3c78-df5e-490d-9354-6e7c59285d16"))
 
-  (label "GND" (at 71.12 78.74000000000001 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "a4ad38ab-2a35-432c-aceb-3b81bc7fa678"))
+  (label "GND" (at 71.12 78.74000000000001 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "41c7a769-c998-416f-9f2a-0c6f5d728422"))
 
-  (label "VCC" (at 50.8 78.74000000000001 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "54b9cfd1-aae7-4193-bcde-d68073302ca8"))
+  (label "VCC" (at 50.8 78.74000000000001 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "072f81de-1045-4688-8ed9-baab587be2de"))
 
-  (label "GND" (at 71.12 73.66 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "bb86e2e5-6b0f-4b34-912b-9a8b4f7cbbba"))
+  (label "GND" (at 71.12 73.66 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "9f07d034-a6c2-4bf0-a034-b90eee92b372"))
 
-  (label "PWM_HEATER" (at 137.16 71.12 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "184092ac-77f8-485a-9fe4-326493a98f75"))
+  (label "PWM_HEATER" (at 137.16 71.12 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "622677f4-b548-4442-997c-40f2409bdc7b"))
 
-  (label "ADC_NTC" (at 137.16 73.66 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "4809cf02-5bf2-48ba-ab21-fa56807c9d45"))
+  (label "ADC_NTC" (at 137.16 73.66 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "e1ee63d5-c2a1-4cb9-a895-d7819b5cff17"))
 
-  (label "PWM_M_IDX" (at 137.16 76.2 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "2a74113f-559f-45d3-8a07-a15511fbfe30"))
+  (label "PWM_M_IDX" (at 137.16 76.2 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "b7bb6c7f-280b-41f2-a131-65c3b7fe6d45"))
 
-  (label "PWM_M_MID" (at 137.16 78.74000000000001 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "798d1e93-981b-4164-a1dc-e50fa3b4e868"))
+  (label "PWM_M_MID" (at 137.16 78.74000000000001 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "0b948aea-6a69-4cf4-b1ff-6194f393ef60"))
 
-  (label "PWM_M_RNG" (at 137.16 81.28 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "c1b5501a-e315-40d1-b031-ccc01c9dee84"))
+  (label "PWM_M_RNG" (at 137.16 81.28 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "8d073291-b948-450f-9c4f-fea0a611ac36"))
 
-  (label "PWM_M_PNK" (at 137.16 83.82000000000001 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "76c69726-1bda-4056-93d1-d1fb68532552"))
+  (label "PWM_M_PNK" (at 137.16 83.82000000000001 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "7f86d3e3-3f03-4ee1-b2d1-f9b9595ceca7"))
 
-  (label "ADC_EMG" (at 167.64000000000001 71.12 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "78e94592-3aa1-4b23-a0c7-c0351b178a03"))
+  (label "ADC_EMG" (at 167.64000000000001 71.12 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "436853a3-edbf-4f57-a470-5cd8270aefaf"))
 
-  (label "VCC" (at 167.64000000000001 73.66 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "ceedf0ce-9e7c-4e60-bf56-7ad694ad920d"))
+  (label "VCC" (at 167.64000000000001 73.66 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "e0b77996-b18c-4cbf-bf3d-dfd399a1195e"))
 
-  (label "GND" (at 167.64000000000001 76.2 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "eba5b025-b61b-402d-8f9b-acf844fbcc97"))
+  (label "GND" (at 167.64000000000001 76.2 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "d9f0e421-50be-4f8f-84ae-feee2733642b"))
 
-  (label "PWM_HEATER" (at 144.78 137.16 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "c75e132e-e28b-48fa-979d-9da773aa8092"))
+  (label "PWM_HEATER" (at 144.78 137.16 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "3c10e610-b428-4cb5-8885-8c49ac677357"))
 
-  (label "GND" (at 160.02 139.7 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "52515410-dfdf-402a-82ec-7b27315bceb9"))
+  (label "GND" (at 160.02 139.7 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "21f2696f-9940-4aba-9531-ff9a88f934e9"))
 
-  (label "NET_HEAT" (at 160.02 134.62 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "2b9bbddf-5fdc-4d2b-9302-edf5dbd04880"))
+  (label "NET_HEAT" (at 160.02 134.62 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "c2c4abad-5a09-4731-b94d-3a95b8082290"))
 
-  (label "PWM_M_IDX" (at 124.46000000000001 167.64 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "0c89a208-6904-4d10-976d-f5dcb9a8f473"))
+  (label "PWM_M_IDX" (at 124.46000000000001 167.64 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "ad22c22d-2a60-4bda-8239-2c564a88babd"))
 
-  (label "GND" (at 139.70000000000002 170.17999999999998 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "0700b1d3-e7bf-4150-90a4-af5d63c017d3"))
+  (label "GND" (at 139.70000000000002 170.17999999999998 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "854f6711-94dc-4159-8311-06f923612f21"))
 
-  (label "NET_M_IDX" (at 139.70000000000002 165.1 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "f1303333-b774-403e-86f6-c0e04728cfd7"))
+  (label "NET_M_IDX" (at 139.70000000000002 165.1 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "b1fee90f-0708-4741-a6ce-96321408b1e6"))
 
-  (label "PWM_M_MID" (at 144.78 167.64 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "e410891e-5dcb-421e-845f-ec3df6fddbec"))
+  (label "PWM_M_MID" (at 144.78 167.64 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "dde96449-75ec-4cb3-b6bd-8b9eec63ed9a"))
 
-  (label "GND" (at 160.02 170.17999999999998 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "cc1a4ee8-8d5b-4751-a5f7-6f0fd25eea99"))
+  (label "GND" (at 160.02 170.17999999999998 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "767cd0db-a535-4b7a-ac0f-0f47f62fda1a"))
 
-  (label "NET_M_MID" (at 160.02 165.1 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "0ebf5478-d115-4636-88ba-532b23070f56"))
+  (label "NET_M_MID" (at 160.02 165.1 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "99a9afe8-cac4-4b6e-9dca-3d1327436710"))
 
-  (label "PWM_M_RNG" (at 165.1 167.64 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "46af6823-a4e1-4f49-bc90-21f27b47c1d2"))
+  (label "PWM_M_RNG" (at 165.1 167.64 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "7ac61217-5771-4676-83d2-9f1eeec6428c"))
 
-  (label "GND" (at 180.34 170.17999999999998 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "0f532b0d-eb24-4a83-bbc9-d86f7dbb8cf5"))
+  (label "GND" (at 180.34 170.17999999999998 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "4567f15c-4eee-432a-a073-c9a3e2c949ce"))
 
-  (label "NET_M_RNG_PNK" (at 180.34 165.1 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "926d306d-0955-4d18-b5dd-649329804040"))
+  (label "NET_M_RNG_PNK" (at 180.34 165.1 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "cfa17db4-c9bc-4a2f-8730-9c7fe4e8aa1b"))
 
-  (label "PWM_M_PNK" (at 185.42 167.64 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "86bc02c8-7bb0-4ceb-a385-edd7e7acf996"))
+  (label "PWM_M_PNK" (at 185.42 167.64 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "c9283687-e957-45f1-a5a3-9da60acab157"))
 
-  (label "GND" (at 200.66 170.17999999999998 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "968ada26-0e7b-44b6-b4a4-433f5974f81c"))
+  (label "GND" (at 200.66 170.17999999999998 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "f988fbe7-60bb-47c6-9464-7bc02037039d"))
 
-  (label "NET_M_RNG_PNK" (at 200.66 165.1 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "2c394a78-e409-4e88-bfd1-bd7fe171bad6"))
+  (label "NET_M_RNG_PNK" (at 200.66 165.1 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "044aa27a-252b-41ac-83d9-32599139d91b"))
 
-  (label "VCC" (at 101.6 129.54 90) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "902ab2cf-e4bf-4c14-97dd-a99e24998ad4"))
+  (label "VCC" (at 101.6 129.54 90) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "54531a86-791e-44b9-a825-beff55db1a11"))
 
-  (label "ADC_NTC" (at 101.6 144.78 270) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "4f2fa15b-8ed2-42cd-9758-30580a09e882"))
+  (label "ADC_NTC" (at 101.6 144.78 270) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "2e5bfafc-e892-4517-8c17-44da8f1cde6f"))
 
-  (label "ADC_NTC" (at 101.6 149.85999999999999 90) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "f9358390-12c7-48d6-aa10-c0c3b6701d2d"))
+  (label "ADC_NTC" (at 101.6 149.85999999999999 90) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "6095cad0-23f2-49e4-adcf-f2441630bb68"))
 
-  (label "GND" (at 101.6 165.1 270) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "f1c40026-46e9-463d-ae66-7a4f52bf42cc"))
+  (label "GND" (at 101.6 165.1 270) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "5e3971b9-7dd5-4f39-8151-ce85c1839ae3"))
 
-  (label "VCC" (at 223.52 132.07999999999998 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "d7d1d3f4-433c-4542-8d29-2b32a142a240"))
+  (label "VCC" (at 223.52 132.07999999999998 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "9f540f20-c26c-4e57-b46d-fb4401ced305"))
 
-  (label "NET_HEAT" (at 223.52 134.62 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "aac19ef8-06bd-459a-be25-3efa6bb5db7e"))
+  (label "NET_HEAT" (at 223.52 134.62 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "c295801a-cdbf-434f-8251-171712c34158"))
 
-  (label "NET_M_IDX" (at 223.52 137.16 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "5eb61420-2f40-42c7-8239-b8537a30c73d"))
+  (label "NET_M_IDX" (at 223.52 137.16 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "8099f777-a4f1-463d-8220-d4790896bb8a"))
 
-  (label "NET_M_MID" (at 223.52 139.7 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "22e8a7e4-edef-418f-acaa-e9ec25d0008f"))
+  (label "NET_M_MID" (at 223.52 139.7 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "92c5960d-cd86-47c6-93b5-10ae7d6e0c22"))
 
-  (label "NET_M_RNG_PNK" (at 223.52 142.24 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "b081e5e3-f5c8-4238-8dc6-d5bfc194dd94"))
+  (label "NET_M_RNG_PNK" (at 223.52 142.24 180) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "31bb91e7-d9ee-469b-9624-e244afe95ad7"))
 
-  (label "VCC" (at 81.28 53.34 90) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "3d969194-47bb-461e-a094-0b6f17747bfb"))
+  (label "VCC" (at 81.28 58.42 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "420e583a-5312-4309-8d7f-eb1d92b3be8d"))
 
-  (label "GND" (at 81.28 63.50000000000001 90) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "db14b513-d929-4e8f-af7c-7232d468021b"))
+  (label "GND" (at 81.28 68.58000000000001 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "b19d5366-df4f-4cc7-b3ff-2742669693d0"))
 )
