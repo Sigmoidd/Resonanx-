@@ -1,0 +1,54 @@
+ERC report (2026-05-15T19:56:35, Encoding UTF8)
+Report includes: Errors, Warnings
+
+***** Sheet /
+[lib_symbol_issues]: The current configuration does not include the symbol library ''
+    ; warning
+    @(1200 mils, 3000 mils): Symbol J1 [USBC_CONN]
+[lib_symbol_issues]: The current configuration does not include the symbol library ''
+    ; warning
+    @(2400 mils, 3000 mils): Symbol U2 [TP4056_IC]
+[lib_symbol_issues]: The current configuration does not include the symbol library ''
+    ; warning
+    @(3200 mils, 2200 mils): Symbol #FLG1 [PWR_FLAG]
+[lib_symbol_issues]: The current configuration does not include the symbol library ''
+    ; warning
+    @(3200 mils, 2600 mils): Symbol #FLG2 [PWR_FLAG]
+[lib_symbol_issues]: The current configuration does not include the symbol library ''
+    ; warning
+    @(4000 mils, 5400 mils): Symbol R1 [R_10K]
+[lib_symbol_issues]: The current configuration does not include the symbol library ''
+    ; warning
+    @(4000 mils, 6200 mils): Symbol RT1 [NTC]
+[lib_symbol_issues]: The current configuration does not include the symbol library ''
+    ; warning
+    @(5200 mils, 6600 mils): Symbol Q2 [2N7002]
+[lib_symbol_issues]: The current configuration does not include the symbol library ''
+    ; warning
+    @(6000 mils, 3000 mils): Symbol U1 [ESP32S3_MODULE]
+[lib_symbol_issues]: The current configuration does not include the symbol library ''
+    ; warning
+    @(6000 mils, 5400 mils): Symbol Q1 [IRLZ44N]
+[lib_symbol_issues]: The current configuration does not include the symbol library ''
+    ; warning
+    @(6000 mils, 6600 mils): Symbol Q3 [2N7002]
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(6600 mils, 2800 mils): Label 'ADC_EMG'
+[lib_symbol_issues]: The current configuration does not include the symbol library ''
+    ; warning
+    @(6800 mils, 6600 mils): Symbol Q4 [2N7002]
+[lib_symbol_issues]: The current configuration does not include the symbol library ''
+    ; warning
+    @(7600 mils, 6600 mils): Symbol Q5 [2N7002]
+[lib_symbol_issues]: The current configuration does not include the symbol library ''
+    ; warning
+    @(9200 mils, 5400 mils): Symbol J2 [ZIF_5PIN]
+
+ ** ERC messages: 14  Errors 0  Warnings 14
+
+ ** Ignored checks:
+    - Global label only appears once in the schematic
+    - Four connection points are joined together
+    - SPICE model issue
+    - Assigned footprint doesn't match footprint filters

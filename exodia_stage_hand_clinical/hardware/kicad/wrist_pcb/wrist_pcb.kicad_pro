@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "filename": "wrist_pcb.kicad_pro",
+    "version": 1
+  },
+  "project_name": "wrist_pcb",
+  "pcbnew": {
+    "last_paths": {
+      "netlist": ""
+    },
+    "page_layout_descr_file": ""
+  },
+  "schematic": {
+    "last_paths": {
+      "netlist": ""
+    },
+    "page_layout_descr_file": ""
+  },
+  "sheets": [
+    [
+      "1b044682-1fb9-4ebf-a030-7715eef75fe1",
+      ""
+    ]
+  ]
+}

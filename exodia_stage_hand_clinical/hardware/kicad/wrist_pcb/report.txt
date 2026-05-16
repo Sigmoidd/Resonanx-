@@ -1,0 +1,235 @@
+Info: Processing symbol 'J1:Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12'.
+Info: Processing symbol 'U1:RF_Module:ESP32-S2-MINI-1'.
+Info: Processing symbol 'Q5:Package_TO_SOT_SMD:TSOT-23'.
+Info: Processing symbol 'Q1:Package_TO_SOT_SMD:TO-252-2'.
+Info: Processing symbol 'RT1:Resistor_SMD:R_0805_2012Metric'.
+Info: Processing symbol 'Q4:Package_TO_SOT_SMD:TSOT-23'.
+Info: Processing symbol 'U2:Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm'.
+Info: Processing symbol 'Q3:Package_TO_SOT_SMD:TSOT-23'.
+Info: Processing symbol 'J2:Connector_FFC-FPC:Amphenol_F32Q-1A7x1-11005_1x05-1MP_P0.5mm_Horizontal'.
+Info: Processing symbol 'Q2:Package_TO_SOT_SMD:TSOT-23'.
+Info: Processing symbol 'R1:Resistor_SMD:R_0805_2012Metric'.
+Added J1 (footprint 'Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12').
+Changed REF** reference designator to J1.
+Changed J1 value from USB_C_Receptacle_HRO_TYPE-C-31-M-12 to USBC_CONN.
+Updated J1 symbol association from  to /4d714fbc-e81f-4947-9c91-5e51f0e14455.
+Updated J1 sheetname to '/'.
+Updated J1 sheetfile to 'wrist_pcb.kicad_sch'.
+Connected U1 pin 2 to /ADC_NTC.
+Connected U1 pin 1 to /PWM_HEATER.
+Add net /ADC_EMG.
+Connected U1 pin 7 to /ADC_EMG.
+Connected U1 pin 5 to /PWM_M_RNG.
+Connected U1 pin 3 to /PWM_M_IDX.
+Updated U1 unit metadata.
+Added U2 (footprint 'Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm').
+Changed REF** reference designator to U2.
+Changed U2 value from SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm to TP4056_IC.
+Updated U2 symbol association from  to /f3d0ca17-3eed-4310-ba53-a5ffbae4b23e.
+Updated U2 sheetname to '/'.
+Updated U2 sheetfile to 'wrist_pcb.kicad_sch'.
+Connected U2 pin 4 to /GND.
+Add net /VBUS.
+Connected U2 pin 1 to /VBUS.
+Connected U2 pin 2 to /VCC.
+Connected U2 pin 3 to /GND.
+Updated U2 unit metadata.
+Updated J1 unit metadata.
+Added J2 (footprint 'Connector_FFC-FPC:Amphenol_F32Q-1A7x1-11005_1x05-1MP_P0.5mm_Horizontal').
+Changed REF** reference designator to J2.
+Changed J2 value from Amphenol_F32Q-1A7x1-11005_1x05-1MP_P0.5mm_Horizontal to ZIF_5PIN.
+Updated J2 symbol association from  to /88369947-e9fe-471b-95a9-082308671188.
+Updated J2 sheetname to '/'.
+Updated J2 sheetfile to 'wrist_pcb.kicad_sch'.
+Add net /NET_M_MID.
+Connected J2 pin 4 to /NET_M_MID.
+Add net /NET_M_IDX.
+Connected J2 pin 3 to /NET_M_IDX.
+Add net /VCC.
+Connected J2 pin 1 to /VCC.
+Add net /NET_M_RNG_PNK.
+Connected J2 pin 5 to /NET_M_RNG_PNK.
+Add net /NET_HEAT.
+Connected J2 pin 2 to /NET_HEAT.
+Updated J2 unit metadata.
+Added Q1 (footprint 'Package_TO_SOT_SMD:TO-252-2').
+Changed REF** reference designator to Q1.
+Changed Q1 value from TO-252-2 to IRLZ44N.
+Updated Q1 symbol association from  to /42714a0b-0968-459a-8b3f-446f3c242f5b.
+Updated Q1 sheetname to '/'.
+Updated Q1 sheetfile to 'wrist_pcb.kicad_sch'.
+Connected Q1 pin 2 to /NET_HEAT.
+Add net /PWM_HEATER.
+Connected Q1 pin 1 to /PWM_HEATER.
+Add net /GND.
+Connected Q1 pin 3 to /GND.
+Updated Q1 unit metadata.
+Added Q2 (footprint 'Package_TO_SOT_SMD:TSOT-23').
+Changed REF** reference designator to Q2.
+Changed Q2 value from TSOT-23 to 2N7002.
+Updated Q2 symbol association from  to /316464f9-5ce4-477f-9624-de1ab4c47241.
+Updated Q2 sheetname to '/'.
+Updated Q2 sheetfile to 'wrist_pcb.kicad_sch'.
+Add net /PWM_M_IDX.
+Connected Q2 pin 1 to /PWM_M_IDX.
+Connected Q2 pin 3 to /GND.
+Connected Q2 pin 2 to /NET_M_IDX.
+Updated Q2 unit metadata.
+Added Q3 (footprint 'Package_TO_SOT_SMD:TSOT-23').
+Changed REF** reference designator to Q3.
+Changed Q3 value from TSOT-23 to 2N7002.
+Updated Q3 symbol association from  to /27379c39-29c5-4008-98eb-1d79c0144687.
+Updated Q3 sheetname to '/'.
+Updated Q3 sheetfile to 'wrist_pcb.kicad_sch'.
+Connected Q3 pin 2 to /NET_M_MID.
+Add net /PWM_M_MID.
+Connected Q3 pin 1 to /PWM_M_MID.
+Connected Q3 pin 3 to /GND.
+Updated Q3 unit metadata.
+Added Q4 (footprint 'Package_TO_SOT_SMD:TSOT-23').
+Changed REF** reference designator to Q4.
+Changed Q4 value from TSOT-23 to 2N7002.
+Updated Q4 symbol association from  to /e999e433-f013-4b97-895d-3cf921621954.
+Updated Q4 sheetname to '/'.
+Updated Q4 sheetfile to 'wrist_pcb.kicad_sch'.
+Connected Q4 pin 2 to /NET_M_RNG_PNK.
+Connected Q4 pin 3 to /GND.
+Add net /PWM_M_RNG.
+Connected Q4 pin 1 to /PWM_M_RNG.
+Updated Q4 unit metadata.
+Added Q5 (footprint 'Package_TO_SOT_SMD:TSOT-23').
+Changed REF** reference designator to Q5.
+Changed Q5 value from TSOT-23 to 2N7002.
+Updated Q5 symbol association from  to /cb52de33-8295-4883-924c-ff9ccde96a50.
+Updated Q5 sheetname to '/'.
+Updated Q5 sheetfile to 'wrist_pcb.kicad_sch'.
+Connected Q5 pin 2 to /NET_M_RNG_PNK.
+Connected Q5 pin 3 to /GND.
+Add net /PWM_M_PNK.
+Connected Q5 pin 1 to /PWM_M_PNK.
+Updated Q5 unit metadata.
+Added R1 (footprint 'Resistor_SMD:R_0805_2012Metric').
+Changed REF** reference designator to R1.
+Changed R1 value from R_0805_2012Metric to R_10K.
+Updated R1 symbol association from  to /9e9ddf49-c30a-4910-a4e4-1ce9870be282.
+Updated R1 sheetname to '/'.
+Updated R1 sheetfile to 'wrist_pcb.kicad_sch'.
+Add net /ADC_NTC.
+Connected R1 pin 1 to /ADC_NTC.
+Connected R1 pin 2 to /VCC.
+Updated R1 unit metadata.
+Added RT1 (footprint 'Resistor_SMD:R_0805_2012Metric').
+Changed REF** reference designator to RT1.
+Changed RT1 value from R_0805_2012Metric to NTC.
+Updated RT1 symbol association from  to /24d15451-1fc9-47e8-b936-b17cb310e767.
+Updated RT1 sheetname to '/'.
+Updated RT1 sheetfile to 'wrist_pcb.kicad_sch'.
+Connected RT1 pin 2 to /ADC_NTC.
+Connected RT1 pin 1 to /GND.
+Updated RT1 unit metadata.
+Added U1 (footprint 'RF_Module:ESP32-S2-MINI-1').
+Changed REF** reference designator to U1.
+Changed U1 value from ESP32-S2-MINI-1 to ESP32S3_MODULE.
+Updated U1 symbol association from  to /85397f20-0853-48d4-82e1-da31a131987e.
+Updated U1 sheetname to '/'.
+Updated U1 sheetfile to 'wrist_pcb.kicad_sch'.
+Connected U1 pin 6 to /PWM_M_PNK.
+Connected U1 pin 4 to /PWM_M_MID.
+Connected U1 pin 9 to /GND.
+Connected U1 pin 8 to /VCC.
+Warning: No net found for component J1 pad B4 (no pin B4 in symbol).
+Warning: No net found for component J1 pad A7 (no pin A7 in symbol).
+Warning: No net found for component J1 pad B7 (no pin B7 in symbol).
+Warning: No net found for component J1 pad A8 (no pin A8 in symbol).
+Warning: No net found for component J1 pad A6 (no pin A6 in symbol).
+Warning: No net found for component J1 pad A5 (no pin A5 in symbol).
+Warning: No net found for component J1 pad B12 (no pin B12 in symbol).
+Warning: No net found for component J1 pad SH (no pin SH in symbol).
+Warning: No net found for component J1 pad SH (no pin SH in symbol).
+Warning: No net found for component J1 pad B6 (no pin B6 in symbol).
+Warning: No net found for component J1 pad SH (no pin SH in symbol).
+Warning: No net found for component J1 pad A1 (no pin A1 in symbol).
+Warning: No net found for component J1 pad A4 (no pin A4 in symbol).
+Warning: No net found for component J1 pad SH (no pin SH in symbol).
+Warning: No net found for component J1 pad B8 (no pin B8 in symbol).
+Warning: No net found for component J1 pad A12 (no pin A12 in symbol).
+Warning: No net found for component J1 pad A9 (no pin A9 in symbol).
+Warning: No net found for component J1 pad B5 (no pin B5 in symbol).
+Warning: No net found for component J1 pad B9 (no pin B9 in symbol).
+Warning: No net found for component U1 pad 47 (no pin 47 in symbol).
+Warning: No net found for component U1 pad 57 (no pin 57 in symbol).
+Warning: No net found for component U1 pad 25 (no pin 25 in symbol).
+Warning: No net found for component U1 pad 37 (no pin 37 in symbol).
+Warning: No net found for component U1 pad 60 (no pin 60 in symbol).
+Warning: No net found for component U1 pad 55 (no pin 55 in symbol).
+Warning: No net found for component U1 pad 27 (no pin 27 in symbol).
+Warning: No net found for component U1 pad 61 (no pin 61 in symbol).
+Warning: No net found for component U1 pad 19 (no pin 19 in symbol).
+Warning: No net found for component U1 pad 40 (no pin 40 in symbol).
+Warning: No net found for component U1 pad 48 (no pin 48 in symbol).
+Warning: No net found for component U1 pad 12 (no pin 12 in symbol).
+Warning: No net found for component U1 pad 17 (no pin 17 in symbol).
+Warning: No net found for component U1 pad 51 (no pin 51 in symbol).
+Warning: No net found for component U1 pad 41 (no pin 41 in symbol).
+Warning: No net found for component U1 pad 65 (no pin 65 in symbol).
+Warning: No net found for component U1 pad 49 (no pin 49 in symbol).
+Warning: No net found for component U1 pad 56 (no pin 56 in symbol).
+Warning: No net found for component U1 pad 21 (no pin 21 in symbol).
+Warning: No net found for component U1 pad 35 (no pin 35 in symbol).
+Warning: No net found for component U1 pad 39 (no pin 39 in symbol).
+Warning: No net found for component U1 pad 61 (no pin 61 in symbol).
+Warning: No net found for component U1 pad 61 (no pin 61 in symbol).
+Warning: No net found for component U1 pad 24 (no pin 24 in symbol).
+Warning: No net found for component U1 pad 10 (no pin 10 in symbol).
+Warning: No net found for component U1 pad 16 (no pin 16 in symbol).
+Warning: No net found for component U1 pad 28 (no pin 28 in symbol).
+Warning: No net found for component U1 pad 64 (no pin 64 in symbol).
+Warning: No net found for component J2 pad MP (no pin MP in symbol).
+Warning: No net found for component J2 pad MP (no pin MP in symbol).
+Warning: No net found for component U1 pad 33 (no pin 33 in symbol).
+Warning: No net found for component U1 pad 45 (no pin 45 in symbol).
+Warning: No net found for component U1 pad 43 (no pin 43 in symbol).
+Warning: No net found for component U1 pad 59 (no pin 59 in symbol).
+Warning: No net found for component U1 pad 58 (no pin 58 in symbol).
+Warning: No net found for component U1 pad 61 (no pin 61 in symbol).
+Warning: No net found for component U1 pad 61 (no pin 61 in symbol).
+Warning: No net found for component U1 pad 61 (no pin 61 in symbol).
+Warning: No net found for component U1 pad 54 (no pin 54 in symbol).
+Warning: No net found for component U1 pad 26 (no pin 26 in symbol).
+Warning: No net found for component U1 pad 15 (no pin 15 in symbol).
+Warning: No net found for component U1 pad 22 (no pin 22 in symbol).
+Warning: No net found for component U1 pad 13 (no pin 13 in symbol).
+Warning: No net found for component U1 pad 32 (no pin 32 in symbol).
+Warning: No net found for component U1 pad 62 (no pin 62 in symbol).
+Warning: No net found for component U1 pad 14 (no pin 14 in symbol).
+Warning: No net found for component U1 pad 46 (no pin 46 in symbol).
+Warning: No net found for component U1 pad 11 (no pin 11 in symbol).
+Warning: No net found for component U1 pad 61 (no pin 61 in symbol).
+Warning: No net found for component U1 pad 30 (no pin 30 in symbol).
+Warning: No net found for component U1 pad 61 (no pin 61 in symbol).
+Warning: No net found for component U1 pad 23 (no pin 23 in symbol).
+Warning: No net found for component U1 pad 63 (no pin 63 in symbol).
+Warning: No net found for component U1 pad 53 (no pin 53 in symbol).
+Warning: No net found for component J1 pad B1 (no pin B1 in symbol).
+Warning: No net found for component U1 pad 50 (no pin 50 in symbol).
+Warning: No net found for component U1 pad 38 (no pin 38 in symbol).
+Warning: No net found for component U1 pad 18 (no pin 18 in symbol).
+Warning: No net found for component U1 pad 20 (no pin 20 in symbol).
+Warning: No net found for component U1 pad 31 (no pin 31 in symbol).
+Warning: No net found for component U1 pad 44 (no pin 44 in symbol).
+Warning: No net found for component U2 pad 8 (no pin 8 in symbol).
+Warning: No net found for component U2 pad 5 (no pin 5 in symbol).
+Warning: No net found for component U2 pad 6 (no pin 6 in symbol).
+Warning: No net found for component U1 pad 34 (no pin 34 in symbol).
+Warning: No net found for component U1 pad 52 (no pin 52 in symbol).
+Warning: No net found for component U1 pad 42 (no pin 42 in symbol).
+Warning: No net found for component U1 pad 61 (no pin 61 in symbol).
+Warning: No net found for component U2 pad 7 (no pin 7 in symbol).
+Warning: No net found for component U1 pad 36 (no pin 36 in symbol).
+Warning: No net found for component U2 pad 9 (no pin 9 in symbol).
+Warning: No net found for component U1 pad 29 (no pin 29 in symbol).
+Error: J1 pad 2 not found in Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12.
+Error: J1 pad 1 not found in Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12.
+
+
+Info: Total warnings: 91, errors: 2.
