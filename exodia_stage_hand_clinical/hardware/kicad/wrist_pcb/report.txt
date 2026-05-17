@@ -1,109 +1,125 @@
 Info: Processing symbol 'J1:'.
-Info: Processing symbol 'RT1:'.
-Info: Processing symbol 'U2:'.
-Info: Processing symbol 'J2:'.
-Info: Processing symbol 'Q5:'.
-Info: Processing symbol 'Q4:'.
-Info: Processing symbol 'R1:'.
-Info: Processing symbol 'Q3:'.
 Info: Processing symbol 'Q1:'.
 Info: Processing symbol 'U1:'.
+Info: Processing symbol 'J2:'.
+Info: Processing symbol 'Q3:'.
 Info: Processing symbol 'Q2:'.
-Updated J1 symbol association from /4d714fbc-e81f-4947-9c91-5e51f0e14455 to /ab5a4909-e074-483c-b079-3fa164a1089a.
-Connected J1 pin B4 to /VBUS.
-Disconnected U2 pin 1.
-Connected U1 pin 18 to /PWM_M_RNG.
-Connected U1 pin 20 to /ADC_EMG.
-Disconnected U2 pin 2.
-Reconnected U1 pin 2 from /ADC_NTC to /VCC.
-Connected J1 pin B12 to /GND.
-Connected J1 pin SH to /GND.
-Connected J1 pin SH to /GND.
-Reconnected U1 pin 9 from /GND to /PWM_M_IDX.
-Connected J1 pin SH to /GND.
-Connected J1 pin A1 to /GND.
-Connected J1 pin A4 to /VBUS.
-Connected J1 pin SH to /GND.
-Reconnected U1 pin 8 from /VCC to /ADC_NTC.
-Connected J1 pin A9 to /VBUS.
-Connected U1 pin 19 to /PWM_M_PNK.
-Connected J1 pin B9 to /VBUS.
-Connected J1 pin B1 to /GND.
-Updated J1 unit metadata.
-Updated J2 symbol association from /88369947-e9fe-471b-95a9-082308671188 to /355e9eaa-4d22-4327-814f-68370508518e.
-Reconnected U1 pin 1 from /PWM_HEATER to /GND.
-Connected U1 pin 10 to /PWM_M_MID.
-Updated Q1 symbol association from /42714a0b-0968-459a-8b3f-446f3c242f5b to /08f3d242-43e9-48d5-b9b5-b7659342edcd.
-Updated Q2 symbol association from /316464f9-5ce4-477f-9624-de1ab4c47241 to /0ed1f89d-3022-4927-9d5d-77390b0df1bb.
-Reconnected Q2 pin 3 from /GND to /NET_M_IDX.
-Reconnected Q2 pin 2 from /NET_M_IDX to /GND.
-Updated Q2 unit metadata.
-Connected J1 pin A12 to /GND.
-Updated Q3 symbol association from /27379c39-29c5-4008-98eb-1d79c0144687 to /50da776f-f71b-40a8-ae21-4baf5f758bb8.
-Reconnected Q3 pin 2 from /NET_M_MID to /GND.
-Reconnected Q3 pin 3 from /GND to /NET_M_MID.
-Updated Q3 unit metadata.
-Updated Q4 symbol association from /e999e433-f013-4b97-895d-3cf921621954 to /0c35e412-4c1d-47e7-b557-b7fddd75daab.
-Reconnected Q4 pin 2 from /NET_M_RNG_PNK to /GND.
-Reconnected Q4 pin 3 from /GND to /NET_M_RNG_PNK.
-Updated Q4 unit metadata.
-Updated Q5 symbol association from /cb52de33-8295-4883-924c-ff9ccde96a50 to /d02d9b9d-d231-48e4-86f3-18c2867711f4.
-Reconnected Q5 pin 2 from /NET_M_RNG_PNK to /GND.
-Reconnected Q5 pin 3 from /GND to /NET_M_RNG_PNK.
-Updated Q5 unit metadata.
-Updated R1 symbol association from /9e9ddf49-c30a-4910-a4e4-1ce9870be282 to /2b2a69a5-897c-4173-8ccd-08d63ea29261.
-Updated RT1 symbol association from /24d15451-1fc9-47e8-b936-b17cb310e767 to /aeb449dc-fc36-4213-b085-b1e5da762108.
-Updated U1 symbol association from /85397f20-0853-48d4-82e1-da31a131987e to /493058a2-842c-4e2d-8a3a-44885b1cad76.
-Reconnected U1 pin 7 from /ADC_EMG to /PWM_HEATER.
-Updated U2 unit metadata.
-Disconnected U1 pin 5.
-Disconnected U1 pin 3.
-Disconnected U1 pin 6.
-Disconnected U1 pin 4.
-Updated U1 unit metadata.
-Updated U2 symbol association from /f3d0ca17-3eed-4310-ba53-a5ffbae4b23e to /8a1de471-52d0-4463-b9a0-04f0e4c30d61.
-Connected U2 pin 5 to /VCC.
-Reconnected U2 pin 4 from /GND to /VBUS.
-Warning: No net found for component J1 pad A7 (no pin A7 in symbol).
+Info: Processing symbol 'Q4:'.
+Info: Processing symbol 'Q5:'.
+Info: Processing symbol 'R1:'.
+Info: Processing symbol 'R2:'.
+Info: Processing symbol 'R3:'.
+Info: Processing symbol 'R4:'.
+Info: Processing symbol 'U3:'.
+Info: Processing symbol 'R5:'.
+Info: Processing symbol 'RT1:'.
+Info: Processing symbol 'U2:'.
+Connect J1 pin B12 to /GND.
+Connect J1 pin SH to /GND.
+Connect J1 pin SH to /GND.
+Update U1 symbol association from /85397f20-0853-48d4-82e1-da31a131987e to /a313f8bc-81fd-41df-a4bc-5ee4e87baa48.
+Connect J1 pin SH to /GND.
+Connect J1 pin A1 to /GND.
+Connect J1 pin A4 to /VBUS.
+Connect J1 pin SH to /GND.
+Reconnect Q2 pin 3 from /GND to /NET_M_IDX.
+Connect J1 pin A12 to /GND.
+Connect J1 pin A9 to /VBUS.
+Add net /NET_CC2.
+Connect J1 pin B5 to /NET_CC2.
+Connect J1 pin B9 to /VBUS.
+Connect J1 pin B1 to /GND.
+Update J1 unit metadata.
+Update J2 symbol association from /88369947-e9fe-471b-95a9-082308671188 to /35061690-3c1c-4c46-b7bf-088b1bd888f7.
+Connect U1 pin 41 to /PWM_M_PNK.
+Add net /BAT+.
+Reconnect J2 pin 1 from /VCC to /BAT+.
+Disconnect U1 pin 6.
+Update Q1 symbol association from /42714a0b-0968-459a-8b3f-446f3c242f5b to /9f958ec9-4493-440e-b4de-1fa9c6f5b45d.
+Add net /GATE_HEAT.
+Reconnect Q1 pin 1 from /PWM_HEATER to /GATE_HEAT.
+Update Q2 symbol association from /316464f9-5ce4-477f-9624-de1ab4c47241 to /9d0d08f7-f5dd-4865-bb1e-d57e2163cf5c.
+Disconnect U1 pin 4.
+Reconnect Q2 pin 2 from /NET_M_IDX to /GND.
+Update Q2 unit metadata.
+Update Q3 symbol association from /27379c39-29c5-4008-98eb-1d79c0144687 to /66a94b11-3605-4b3b-9aa1-304a76ce971a.
+Reconnect Q3 pin 2 from /NET_M_MID to /GND.
+Reconnect Q3 pin 3 from /GND to /NET_M_MID.
+Update Q3 unit metadata.
+Change J1 value from USBC_CONN to USBC_16PIN.
+Update Q4 symbol association from /e999e433-f013-4b97-895d-3cf921621954 to /954d4301-c94f-48f0-a4cb-ea1804b137e6.
+Reconnect Q4 pin 2 from /NET_M_RNG_PNK to /GND.
+Reconnect Q4 pin 3 from /GND to /NET_M_RNG_PNK.
+Update Q4 unit metadata.
+Update J1 symbol association from /4d714fbc-e81f-4947-9c91-5e51f0e14455 to /f55860e9-80b5-4f09-bcd1-a78e8befd126.
+Update Q5 symbol association from /cb52de33-8295-4883-924c-ff9ccde96a50 to /9c56aa27-85b7-4215-a3ea-4de9a8a7122f.
+Reconnect Q5 pin 2 from /NET_M_RNG_PNK to /GND.
+Reconnect Q5 pin 3 from /GND to /NET_M_RNG_PNK.
+Update Q5 unit metadata.
+Connect J1 pin B4 to /VBUS.
+Change R1 value from R_10K to 10K.
+Update R1 symbol association from /9e9ddf49-c30a-4910-a4e4-1ce9870be282 to /0f078bf6-855b-4b9a-9eaa-e297bda71556.
+Add net /3V3.
+Reconnect R1 pin 2 from /VCC to /3V3.
+Add net /USB_D-.
+Disconnect U1 pin 9.
+Connect J1 pin A7 to /USB_D-.
+Connect U1 pin 42 to /PWM_HEATER.
+Update RT1 symbol association from /24d15451-1fc9-47e8-b936-b17cb310e767 to /7e8832a0-738c-4b06-bf04-25b526dbb1f7.
+Add net /USB_D+.
+Connect J1 pin A6 to /USB_D+.
+Connect U1 pin 38 to /PWM_M_IDX.
+Add net /NET_CC1.
+Reconnect U1 pin 8 from /VCC to /ADC_NTC.
+Connect U1 pin 27 to /USB_D+.
+Connect U1 pin 40 to /PWM_M_RNG.
+Reconnect U1 pin 2 from /ADC_NTC to /3V3.
+Reconnect U1 pin 1 from /PWM_HEATER to /GND.
+Connect U1 pin 39 to /PWM_M_MID.
+Disconnect U1 pin 7.
+Connect U1 pin 20 to /ADC_EMG.
+Disconnect U1 pin 5.
+Disconnect U1 pin 3.
+Update U1 unit metadata.
+Connect J1 pin A5 to /NET_CC1.
+Update U2 symbol association from /f3d0ca17-3eed-4310-ba53-a5ffbae4b23e to /63be51c2-4c10-486e-a674-8d812f05d138.
+Connect U2 pin 5 to /BAT+.
+Reconnect U2 pin 4 from /GND to /VBUS.
+Disconnect U2 pin 1.
+Disconnect U2 pin 2.
+Update U2 unit metadata.
+Connect U1 pin 26 to /USB_D-.
+Warning: No net found for component U1 pad 29 (no pin 29 in symbol).
 Warning: No net found for component J1 pad B7 (no pin B7 in symbol).
+Warning: No net found for component U1 pad 57 (no pin 57 in symbol).
+Warning: No net found for component U1 pad 25 (no pin 25 in symbol).
+Warning: No net found for component U1 pad 37 (no pin 37 in symbol).
+Warning: No net found for component U1 pad 60 (no pin 60 in symbol).
+Warning: No net found for component U1 pad 55 (no pin 55 in symbol).
 Warning: No net found for component J1 pad A8 (no pin A8 in symbol).
-Warning: No net found for component J1 pad A6 (no pin A6 in symbol).
-Warning: No net found for component J1 pad A5 (no pin A5 in symbol).
-Warning: No net found for component J1 pad B6 (no pin B6 in symbol).
-Warning: No net found for component J1 pad B8 (no pin B8 in symbol).
-Warning: No net found for component J1 pad B5 (no pin B5 in symbol).
-Warning: No net found for component J2 pad MP (no pin MP in symbol).
-Warning: No net found for component J2 pad MP (no pin MP in symbol).
-Warning: No net found for component U1 pad 36 (no pin 36 in symbol).
-Warning: No net found for component U1 pad 47 (no pin 47 in symbol).
-Warning: No net found for component U1 pad 12 (no pin 12 in symbol).
-Warning: No net found for component U1 pad 41 (no pin 41 in symbol).
-Warning: No net found for component U1 pad 15 (no pin 15 in symbol).
 Warning: No net found for component U1 pad 61 (no pin 61 in symbol).
-Warning: No net found for component U1 pad 53 (no pin 53 in symbol).
-Warning: No net found for component U1 pad 50 (no pin 50 in symbol).
-Warning: No net found for component U1 pad 38 (no pin 38 in symbol).
-Warning: No net found for component U1 pad 31 (no pin 31 in symbol).
+Warning: No net found for component U1 pad 19 (no pin 19 in symbol).
+Warning: No net found for component J1 pad B6 (no pin B6 in symbol).
 Warning: No net found for component U1 pad 48 (no pin 48 in symbol).
-Warning: No net found for component U1 pad 34 (no pin 34 in symbol).
+Warning: No net found for component J2 pad MP (no pin MP in symbol).
 Warning: No net found for component U1 pad 17 (no pin 17 in symbol).
 Warning: No net found for component U1 pad 51 (no pin 51 in symbol).
-Warning: No net found for component U1 pad 52 (no pin 52 in symbol).
+Warning: No net found for component J2 pad MP (no pin MP in symbol).
 Warning: No net found for component U1 pad 65 (no pin 65 in symbol).
 Warning: No net found for component U1 pad 49 (no pin 49 in symbol).
 Warning: No net found for component U1 pad 56 (no pin 56 in symbol).
 Warning: No net found for component U1 pad 21 (no pin 21 in symbol).
 Warning: No net found for component U1 pad 35 (no pin 35 in symbol).
-Warning: No net found for component U1 pad 39 (no pin 39 in symbol).
+Warning: No net found for component J1 pad B8 (no pin B8 in symbol).
 Warning: No net found for component U1 pad 61 (no pin 61 in symbol).
 Warning: No net found for component U1 pad 61 (no pin 61 in symbol).
 Warning: No net found for component U1 pad 24 (no pin 24 in symbol).
-Warning: No net found for component U1 pad 29 (no pin 29 in symbol).
+Warning: No net found for component U1 pad 10 (no pin 10 in symbol).
 Warning: No net found for component U1 pad 16 (no pin 16 in symbol).
 Warning: No net found for component U1 pad 28 (no pin 28 in symbol).
 Warning: No net found for component U1 pad 64 (no pin 64 in symbol).
-Warning: No net found for component U1 pad 42 (no pin 42 in symbol).
-Warning: No net found for component U1 pad 57 (no pin 57 in symbol).
+Warning: No net found for component U1 pad 36 (no pin 36 in symbol).
+Warning: No net found for component U1 pad 33 (no pin 33 in symbol).
 Warning: No net found for component U1 pad 45 (no pin 45 in symbol).
 Warning: No net found for component U1 pad 43 (no pin 43 in symbol).
 Warning: No net found for component U1 pad 59 (no pin 59 in symbol).
@@ -112,32 +128,38 @@ Warning: No net found for component U1 pad 61 (no pin 61 in symbol).
 Warning: No net found for component U1 pad 61 (no pin 61 in symbol).
 Warning: No net found for component U1 pad 61 (no pin 61 in symbol).
 Warning: No net found for component U1 pad 54 (no pin 54 in symbol).
-Warning: No net found for component U1 pad 26 (no pin 26 in symbol).
-Warning: No net found for component U1 pad 25 (no pin 25 in symbol).
+Warning: No net found for component U1 pad 47 (no pin 47 in symbol).
+Warning: No net found for component U1 pad 12 (no pin 12 in symbol).
 Warning: No net found for component U1 pad 22 (no pin 22 in symbol).
 Warning: No net found for component U1 pad 13 (no pin 13 in symbol).
 Warning: No net found for component U1 pad 32 (no pin 32 in symbol).
 Warning: No net found for component U1 pad 62 (no pin 62 in symbol).
 Warning: No net found for component U1 pad 14 (no pin 14 in symbol).
 Warning: No net found for component U1 pad 46 (no pin 46 in symbol).
-Warning: No net found for component U1 pad 33 (no pin 33 in symbol).
+Warning: No net found for component U1 pad 11 (no pin 11 in symbol).
 Warning: No net found for component U1 pad 61 (no pin 61 in symbol).
 Warning: No net found for component U1 pad 30 (no pin 30 in symbol).
-Warning: No net found for component U1 pad 37 (no pin 37 in symbol).
+Warning: No net found for component U1 pad 15 (no pin 15 in symbol).
 Warning: No net found for component U1 pad 23 (no pin 23 in symbol).
 Warning: No net found for component U1 pad 63 (no pin 63 in symbol).
-Warning: No net found for component U1 pad 60 (no pin 60 in symbol).
-Warning: No net found for component U1 pad 44 (no pin 44 in symbol).
-Warning: No net found for component U1 pad 55 (no pin 55 in symbol).
+Warning: No net found for component U1 pad 61 (no pin 61 in symbol).
+Warning: No net found for component U1 pad 53 (no pin 53 in symbol).
+Warning: No net found for component U1 pad 50 (no pin 50 in symbol).
 Warning: No net found for component U2 pad 8 (no pin 8 in symbol).
-Warning: No net found for component U1 pad 27 (no pin 27 in symbol).
+Warning: No net found for component U1 pad 18 (no pin 18 in symbol).
 Warning: No net found for component U2 pad 6 (no pin 6 in symbol).
-Warning: No net found for component U1 pad 61 (no pin 61 in symbol).
-Warning: No net found for component U1 pad 61 (no pin 61 in symbol).
-Warning: No net found for component U1 pad 40 (no pin 40 in symbol).
+Warning: No net found for component U1 pad 31 (no pin 31 in symbol).
+Warning: No net found for component U1 pad 44 (no pin 44 in symbol).
+Warning: No net found for component U1 pad 34 (no pin 34 in symbol).
 Warning: No net found for component U2 pad 7 (no pin 7 in symbol).
 Warning: No net found for component U2 pad 9 (no pin 9 in symbol).
-Warning: No net found for component U1 pad 11 (no pin 11 in symbol).
+Warning: No net found for component U1 pad 52 (no pin 52 in symbol).
+Warning: No net found for component U1 pad 61 (no pin 61 in symbol).
+Error: Cannot add R5 (no footprint assigned).
+Error: Cannot add R2 (no footprint assigned).
+Error: Cannot add R4 (no footprint assigned).
+Error: Cannot add R3 (no footprint assigned).
+Error: Cannot add U3 (no footprint assigned).
 
 
-Info: Total warnings: 74, errors: 0.
+Info: Total warnings: 66, errors: 5.

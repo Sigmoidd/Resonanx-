@@ -240,7 +240,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "v1.6"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -649,7 +649,7 @@
       {
         "filename": "wrist_pcb.kicad_sch",
         "name": "wrist_pcb",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "uuid": "612667be-82ce-43ad-8d62-c079cc826f00"
       }
     ],
     "used_designators": "",
@@ -657,8 +657,8 @@
   },
   "sheets": [
     [
-      "1b044682-1fb9-4ebf-a030-7715eef75fe1",
-      ""
+      "612667be-82ce-43ad-8d62-c079cc826f00",
+      "wrist_pcb"
     ]
   ],
   "text_variables": {},
