@@ -4,3 +4,12 @@ dist
 .dev.vars
 .DS_Store
 *.local
+
+# KiCad temp and lock files
+*.lck
+*-backups/
+*.bak
+_saved_*
+.history/
+*.rpt
+
