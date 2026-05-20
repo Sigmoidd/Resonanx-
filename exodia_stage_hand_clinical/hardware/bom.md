@@ -1,120 +1,91 @@
-# Exodia Stage Hand Clinical — Bill of Materials & Manufacturing Guide
+# Exodia Stage Hand Care Edition — Bill of Materials & Manufacturing Guide (Rev B)
 
-> **First run cost: ~$135–$165 total for 5 units (~$27–33 per unit)**
-> Fully sealed. No exposed metal. Safe for memory care deployment.
+> **First run cost: ~$165–$195 total for 5 units (~$33–39 per unit)**
+> Fully sealed. No exposed metal. Safe and comfortable for memory care deployment.
 
 ---
 
-## Part 1: PCB Fabrication (order once, covers 5 units)
+## Part 1: PCB & Flex Harness Fabrication (order once, covers 5 units)
 
 | # | Item | Qty | Est. Cost | Source | Notes |
 |---|------|-----|-----------|--------|-------|
-| 1 | **Rigid Wrist PCB** (2-layer FR4, 40×30mm) | 5 | ~$5 | [JLCPCB](https://jlcpcb.com) | Standard 2-layer. Upload Gerbers. Heavily subsidized first-run pricing. |
-| 2 | **Flex Finger Harness** (1-layer polyimide, custom) | 5 | ~$25 | [JLCPCB Flex](https://jlcpcb.com/pcb-assembly) | 1-layer polyimide flex pool. Coverlay both sides. 0.1mm substrate. |
-| 3 | **Laser solder stencil** (for wrist PCB) | 1 | ~$10 | [JLCPCB](https://jlcpcb.com) | Required for precise SMD paste. Order with the PCBs. |
+| 1 | **Rigid Controller PCB** (2-layer FR4, 45×35mm) | 5 | ~$5 | [JLCPCB](https://jlcpcb.com) | Standard 2-layer FR4. Upload Gerbers. |
+| 2 | **Flex Glove Harness** (1-layer polyimide, custom, 20-pin) | 5 | ~$28 | [JLCPCB Flex](https://jlcpcb.com/pcb-assembly) | 1-layer polyimide flex pool. Coverlay both sides. 0.1mm substrate thickness. |
+| 3 | **Laser solder stencil** (for rigid PCB) | 1 | ~$10 | [JLCPCB](https://jlcpcb.com) | Required for precise SMD solder paste application. |
 
-**Fabrication subtotal: ~$40**
+**Fabrication subtotal: ~$43**
 
 ---
 
-## Part 2: SMD Components (per 5-unit batch)
+## Part 2: SMD Board Components (per 5-unit batch)
 
 | # | Component | Qty (×5) | Est. Cost | Source | Notes |
 |---|-----------|----------|-----------|--------|-------|
-| 1 | **ESP32-S3 module** (SMD, e.g. ESP32-S3-MINI-1) | 5 | ~$20 | [LCSC](https://www.lcsc.com/search?q=esp32-s3-mini) / [DigiKey](https://www.digikey.com) | SMD module, not dev kit. Castellated pads. 8MB flash. |
-| 2 | **TP4056 IC** (SOT-23-8 or SOP-8) | 5 | ~$3 | [LCSC](https://www.lcsc.com/search?q=TP4056) | LiPo charge controller IC. |
-| 3 | **IRLZ44N MOSFET** (TO-252 SMD) | 5 | ~$5 | [DigiKey](https://www.digikey.com) / [LCSC](https://www.lcsc.com) | Heater driver. Logic-level. TO-252 (D-PAK) SMD package. |
-| 4 | **2N7002 N-ch MOSFET** (SOT-23, SMD) | 20 | ~$3 | [LCSC](https://www.lcsc.com/search?q=2N7002) | Motor drivers. 4 per unit. SOT-23 SMD. (2N7002 = SMD equiv of 2N7000) |
-| 5 | **10K resistor** 0402, ×2 per board | 10 | ~$1 | [LCSC](https://www.lcsc.com) | NTC voltage divider + pull-down. |
-| 6 | **100nF decoupling caps** 0402 | 10 | ~$1 | [LCSC](https://www.lcsc.com) | Power supply bypass. |
-| 7 | **USB-C connector** (SMD, 16-pin) | 5 | ~$4 | [LCSC](https://www.lcsc.com/search?q=usb+c+16+pin+smd) | Charge port. Data lines unused. |
-| 8 | **ZIF connector** (5-pin, 0.5mm pitch, SMD) | 5 | ~$4 | [LCSC](https://www.lcsc.com/search?q=ZIF+5+pin+0.5mm) | Flex harness interface. |
-| 9 | **SPDT slide switch** (SMD or through-hole) | 5 | ~$2 | [LCSC](https://www.lcsc.com) | Physical power kill. |
+| 1 | **ESP32-S3 module** (SMD, ESP32-S3-MINI-1) | 5 | ~$20 | [LCSC](https://www.lcsc.com) / [DigiKey](https://www.digikey.com) | SMD module with castellated pads. 8MB flash. |
+| 2 | **TP4056 IC** (SOP-8 or SOT-23-8) | 5 | ~$3 | [LCSC](https://www.lcsc.com) | LiPo charging regulator IC. |
+| 3 | **AP2112K-3.3 LDO Regulator** (SOT-23-5) | 5 | ~$2 | [LCSC](https://www.lcsc.com) | High-performance 3.3V LDO for stable analog & brain power. |
+| 4 | **DRV2605L Haptic Driver IC** (VSSOP-10) | 15 | ~$22 | [DigiKey](https://www.digikey.com) / [LCSC](https://www.lcsc.com) | Three dedicated drivers per unit (Low, Mid, High LRA). |
+| 5 | **TS3A5017 Dual 4:1 Mux** (TSSOP-16) | 5 | ~$6 | [DigiKey](https://www.digikey.com) / [LCSC](https://www.lcsc.com) | Analog multiplexer for low-current sensors routing. |
+| 6 | **AO3400A N-ch MOSFET** (SOT-23) | 5 | ~$1 | [LCSC](https://www.lcsc.com) | Heater ground-side switching transistor. |
+| 7 | **10K & 100K resistors** 0603 | 25 | ~$2 | [LCSC](https://www.lcsc.com) | Pull-downs, I2C pull-ups, and NTC dividers. |
+| 8 | **10uF & 1uF bypass caps** 0603 | 20 | ~$2 | [LCSC](https://www.lcsc.com) | Power rail decoupling capacitors. |
+| 9 | **USB-C connector** (16-pin, SMD) | 5 | ~$4 | [LCSC](https://www.lcsc.com) | Receptacle for charge power input. |
+| 10| **ZIF FPC connector** (20-pin, 0.5mm, SMD) | 5 | ~$5 | [LCSC](https://www.lcsc.com) | Glove-to-PCB ribbon interface. |
+| 11| **SPDT Slide switch** (SMD) | 5 | ~$2 | [LCSC](https://www.lcsc.com) | Physical battery power cut. |
+| 12| **SK6812/WS2812B RGB LED** (SMD) | 5 | ~$1 | [LCSC](https://www.lcsc.com) | System status light on controller PCB. |
 
-**SMD subtotal: ~$43**
-
----
-
-## Part 3: Wearable Components (per 5-unit batch)
-
-| # | Component | Qty | Est. Cost | Source | Notes |
-|---|-----------|-----|-----------|--------|-------|
-| 1 | **EeonTex NW170-PI-20 heater fabric** | 2 sheets | ~$40 | [Adafruit #3670](https://www.adafruit.com/product/3670) | 2 sheets yields 5 full sets of heater zones (6 cuts per unit). |
-| 2 | **8mm 0820 coin vibration motors** | 1 pack (20) | ~$10 | [Amazon](https://www.amazon.com/s?k=8mm+coin+vibration+motor+0820) | 4 per unit. Buy 20-pack for spares. |
-| 3 | **10K NTC thermistor** (B3950, waterproof) | 5 | ~$5 | [Amazon](https://www.amazon.com/s?k=10K+NTC+thermistor+waterproof) | One per unit, wrist zone. |
-| 4 | **LiPo 1000mAh** (3.7V, JST, flat) | 5 | ~$30 | [Amazon](https://www.amazon.com/s?k=3.7V+1000mAh+LiPo+flat) / [Adafruit](https://www.adafruit.com/product/2011) | Flat profile to fit wrist enclosure. |
-| 5 | **Fingerless compression gloves** | 5 | ~$40 | [Amazon](https://www.amazon.com/s?k=fingerless+compression+glove) | One per unit. |
-
-**Wearable subtotal: ~$125**
+**SMD subtotal: ~$70**
 
 ---
 
-## Part 4: Safety & Sealing Materials (shared across batch)
+## Part 3: Glove-Side Wearable Components (per 5-unit batch)
 
 | # | Component | Qty | Est. Cost | Source | Notes |
 |---|-----------|-----|-----------|--------|-------|
-| 1 | **3M 9485PC Medical Transfer Tape** | 1 roll | ~$15 | [Amazon](https://www.amazon.com/s?k=3M+9485PC) / [McMaster-Carr](https://www.mcmaster.com) | Bonds flex PCB permanently to glove interior. Medical-grade, skin-safe. |
-| 2 | **MG Chemicals 422B Conformal Coat** | 1 can | ~$20 | [Amazon](https://www.amazon.com/s?k=MG+Chemicals+422B) / [DigiKey](https://www.digikey.com) | Silicone-based. Paint over all solder joints. Waterproof, flexible. |
-| 3 | **TPU filament** (for wrist enclosures) | 250g | ~$15 | [Amazon](https://www.amazon.com/s?k=TPU+filament+flexible) | Flexible, smooth, no sharp edges. ~30g per unit. |
+| 1 | **EeonTex NW170-PI-20 fabric** | 2 sheets | ~$40 | [Adafruit #3670](https://www.adafruit.com/product/3670) | Conductive fabric sheets for glove heater zones. |
+| 2 | **8mm 0820 coin vibration LRAs** | 1 pack (15) | ~$12 | [Amazon](https://www.amazon.com) | 3 per unit (Index, Middle, Ring backs). |
+| 3 | **WS2812B-Mini or SK6812-EC15 LEDs** | 1 pack (25) | ~$10 | [Amazon](https://www.amazon.com) | 5 per unit (finger backs) on the flex harness. |
+| 4 | **10K NTC thermistors** (waterproof sleeve) | 5 | ~$5 | [Amazon](https://www.amazon.com) | Direct temperature sensor sewn near player's skin. |
+| 5 | **LiPo 1000mAh Flat Battery** (3.7V) | 5 | ~$30 | [Adafruit #2011](https://www.adafruit.com/product/2011) | Sleek battery fitting inside the TPU wristband casing. |
+| 6 | **Soft Compression Gloves** (fingerless) | 5 | ~$30 | [Amazon](https://www.amazon.com) | Comfortable textile base for player. |
+
+**Wearable subtotal: ~$127**
+
+---
+
+## Part 4: Assembly & Sealing Materials (shared across batch)
+
+| # | Component | Qty | Est. Cost | Source | Notes |
+|---|-----------|-----|-----------|--------|-------|
+| 1 | **3M 9485PC Medical Transfer Tape** | 1 roll | ~$15 | [Amazon](https://www.amazon.com) | Double-sided skin-safe adhesive for polyimide flex mounting. |
+| 2 | **MG Chemicals 422B Conformal Coat** | 1 can | ~$20 | [Amazon](https://www.amazon.com) | Silicone conformal coating to fully seal components and junctions. |
+| 3 | **TPU filament** (soft/flexible) | 250g | ~$15 | [Amazon](https://www.amazon.com) | Filament for printing rounded wristband cases. |
 
 **Safety subtotal: ~$50**
 
 ---
 
-## Summary
+## Batch Cost Summary (5 Units)
 
-| Phase | Cost |
-|-------|------|
-| PCB fabrication (boards + stencil) | ~$40 |
-| SMD components (5-unit batch) | ~$43 |
-| Wearable components | ~$125 |
-| Safety & sealing | ~$50 |
-| **Total for 5 units** | **~$258** |
-| **Per-unit cost** | **~$52** |
+| Segment | Total Cost |
+|---------|------------|
+| PCB & Flex harness fabrication | ~$43 |
+| SMD board components | ~$70 |
+| Glove wearables & sensors | ~$127 |
+| Sealing & casing materials | ~$50 |
+| **Total for 5 units** | **~$290** |
+| **Per-unit cost** | **~$58** |
 
-> [!NOTE]
-> The $27–33/unit figure from the initial brief assumes you already have conformal coat, TPU printer, and tape from a previous run. Your true **first-run** cost is ~$52/unit. Runs 2+ drop to ~$30/unit as shared materials carry forward.
-
----
-
-## Manufacturing Order of Operations
-
-### Step 1 — Place PCB order (lead time: 5–7 days)
-1. Export Gerbers from KiCad/EasyEDA
-2. Order at JLCPCB: rigid board + flex harness + stencil in one order
-3. Order SMD components from LCSC concurrently (same parent company, ships together)
-
-### Step 2 — Order wearables (lead time: 2–3 days)
-```
-5× fingerless compression gloves
-2× EeonTex heater fabric sheets (Adafruit)
-20× 8mm 0820 coin motors
-5× 10K NTC thermistors
-5× LiPo batteries
-```
-
-### Step 3 — Order safety materials (lead time: 2–3 days)
-```
-3M 9485PC tape
-MG Chemicals 422B conformal coat
-TPU filament (if printing enclosures yourself)
-```
-
-### Step 4 — Assembly (when all parts arrive)
-See `spec.md` Assembly Steps (Stages 1–4)
-
-### Step 5 — Flash & test
-Flash firmware via USB-C before sealing in enclosure.
-Run through `Safety Checklist` in `spec.md` for every unit.
+*Note: Runs 2+ drop to ~$35/unit as shared safety and sealing materials carry forward.*
 
 ---
 
-## JLCPCB Order Tips
+## Manufacturing Flow
 
-> [!IMPORTANT]
-> These steps minimize cost and lead time.
-
-1. **Rigid board:** Set quantity to 5, select "FR4", 1.6mm, HASL finish, no special options. Will be ~$2 with shipping.
-2. **Flex board:** Select "Flexible PCB" tab. Set to 1-layer, polyimide, coverlay both sides. Qty 5 ~$25 with shipping.
-3. **Stencil:** Order at same time as rigid board. Select "top only" (components on top side only).
-4. **LCSC components:** Add to cart at lcsc.com — JLCPCB will consolidate shipping if ordered within same account.
+1. **PCB & Harness Order:** Upload rigid and flex design files to JLCPCB. Select stencil and consolidated components from LCSC.
+2. **Wearables & Sensors Sourcing:** Secure compression gloves, 8mm LRA motors, addressable LEDs, waterproof thermistors, and flat LiPo batteries.
+3. **Board Reflow:** Apply paste using the stencil and reflow the controller board. Inspect the three DRV2605L chips and ESP32-S3 module carefully for bridging.
+4. **Harness Bond:** Cut and clean the glove fabric. Secure the 20-pin flex harness inside the glove lining using the 3M medical adhesive tape. Solder the LRA motors, LEDs, and thermistor to their designated flex pads.
+5. **Ground Routing Check:** Verify that the high-current `HEAT_RETURN` lines and sensitive `ANALOG_GND` lines are isolated all the way to the controller board star-ground point.
+6. **Program and Coat:** Flash test firmware over USB-C. Once functioning, paint all board components and glove solder pads with the conformal coating and let cure.
+7. **Final Casing:** Place the controller board and battery into the printed soft TPU enclosure, lock the 20-pin ZIF in place, and slide the casing onto the glove cuff.
