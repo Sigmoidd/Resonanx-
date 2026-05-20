@@ -488,7 +488,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "wrist_pcb.kicad_pro",
+    "filename": "wrist_pcb_revB.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -798,8 +798,8 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "wrist_pcb.kicad_sch",
-        "name": "wrist_pcb",
+        "filename": "wrist_pcb_revB.kicad_sch",
+        "name": "wrist_pcb_revB",
         "uuid": "612667be-82ce-43ad-8d62-c079cc826f00"
       }
     ],
