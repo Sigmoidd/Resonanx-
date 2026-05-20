@@ -1,0 +1,266 @@
+Info: Processing symbol 'C1:Capacitor_SMD:C_0603_1608Metric'.
+Info: Processing symbol 'C6:Capacitor_SMD:C_0603_1608Metric'.
+Info: Processing symbol 'R3:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'U1:RF_Module:ESP32-S2-MINI-1'.
+Info: Processing symbol 'R7:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'U6:Package_SO:VSSOP-10_3.0x3.0mm_P0.5mm'.
+Info: Processing symbol 'Q1:Package_TO_SOT_SMD:SOT-23-3'.
+Info: Processing symbol 'C2:Capacitor_SMD:C_0603_1608Metric'.
+Info: Processing symbol 'R4:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'C7:Capacitor_SMD:C_0603_1608Metric'.
+Info: Processing symbol 'R8:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'C8:Capacitor_SMD:C_0603_1608Metric'.
+Info: Processing symbol 'U2:Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm_ThermalVias'.
+Info: Processing symbol 'C9:Capacitor_SMD:C_0603_1608Metric'.
+Info: Processing symbol 'C3:Capacitor_SMD:C_0603_1608Metric'.
+Info: Processing symbol 'R1:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'C10:Capacitor_SMD:C_0603_1608Metric'.
+Info: Processing symbol 'R9:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'C11:Capacitor_SMD:C_0603_1608Metric'.
+Info: Processing symbol 'J2:Connector_FFC-FPC:TE_1-1734839-0_1x20-1MP_P0.5mm_Horizontal'.
+Info: Processing symbol 'C12:Capacitor_SMD:C_0603_1608Metric'.
+Info: Processing symbol 'C4:Capacitor_SMD:C_0603_1608Metric'.
+Info: Processing symbol 'R5:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'C13:Capacitor_SMD:C_0603_1608Metric'.
+Info: Processing symbol 'U4:Package_SO:VSSOP-10_3.0x3.0mm_P0.5mm'.
+Info: Processing symbol 'C14:Capacitor_SMD:C_0603_1608Metric'.
+Info: Processing symbol 'R10:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'D1:LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm'.
+Info: Processing symbol 'C5:Capacitor_SMD:C_0603_1608Metric'.
+Info: Processing symbol 'R2:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'J1:Connector_USB:USB_C_Receptacle_XKB_U262-16XN-4BVC11'.
+Info: Processing symbol 'U3:Package_TO_SOT_SMD:SOT-23-5'.
+Info: Processing symbol 'R6:Resistor_SMD:R_0603_1608Metric'.
+Info: Processing symbol 'U7:Package_SO:VSSOP-10_3.0x3.0mm_P0.5mm'.
+Info: Processing symbol 'U5:Package_SO:TSSOP-16_4.4x5mm_P0.65mm'.
+Update C1 symbol association from /900a51c1-53d0-4610-8b29-d79ce9ec0519 to /6d11353a-9081-47ff-a40e-e61e25a46f64.
+Update C1 sheetfile to 'wrist_pcb_revB.kicad_sch'.
+Add net unconnected-(C1-Pad1).
+Reconnect C1 pin 1 from /VBUS to unconnected-(C1-Pad1).
+Add net unconnected-(C1-Pad2).
+Reconnect C1 pin 2 from /GND to unconnected-(C1-Pad2).
+Update C2 symbol association from /0c01f7da-02ee-4593-ba05-c3df580801ac to /ac149031-e380-4b75-892a-33e4f9a7712d.
+Update C2 sheetfile to 'wrist_pcb_revB.kicad_sch'.
+Add net unconnected-(C2-Pad1).
+Reconnect C2 pin 1 from /BAT+ to unconnected-(C2-Pad1).
+Add net unconnected-(C2-Pad2).
+Reconnect C2 pin 2 from /GND to unconnected-(C2-Pad2).
+Update C3 symbol association from /56e818e5-2cbb-4649-9f2b-87b36886961a to /14095ce1-c2a6-461c-a150-0d3cb35f2c96.
+Update C3 sheetfile to 'wrist_pcb_revB.kicad_sch'.
+Add net unconnected-(C3-Pad2).
+Reconnect C3 pin 2 from /GND to unconnected-(C3-Pad2).
+Add net unconnected-(C3-Pad1).
+Reconnect C3 pin 1 from /BAT+ to unconnected-(C3-Pad1).
+Update C4 symbol association from /45d263a9-b56a-409d-93c3-f4a8e5293e47 to /0ac3c206-2813-4439-b538-2b0bfde4364e.
+Update C4 sheetfile to 'wrist_pcb_revB.kicad_sch'.
+Add net unconnected-(C4-Pad2).
+Reconnect C4 pin 2 from /GND to unconnected-(C4-Pad2).
+Add net unconnected-(C4-Pad1).
+Reconnect C4 pin 1 from /3V3 to unconnected-(C4-Pad1).
+Update C5 symbol association from /e7381bb0-d2a5-44e1-8030-12d9bffac586 to /b16378c8-ff9a-4468-909e-fcd471856793.
+Update C5 sheetfile to 'wrist_pcb_revB.kicad_sch'.
+Add net unconnected-(C5-Pad2).
+Reconnect C5 pin 2 from /GND to unconnected-(C5-Pad2).
+Add net unconnected-(C5-Pad1).
+Reconnect C5 pin 1 from /3V3 to unconnected-(C5-Pad1).
+Update C6 symbol association from /abb50504-741d-4ad0-ab2d-ecdba42d1c85 to /070f6ffe-1fa4-4305-b61b-3d0d82db53f1.
+Update C6 sheetfile to 'wrist_pcb_revB.kicad_sch'.
+Add net unconnected-(C6-Pad2).
+Reconnect C6 pin 2 from /GND to unconnected-(C6-Pad2).
+Add net unconnected-(C6-Pad1).
+Reconnect C6 pin 1 from /3V3 to unconnected-(C6-Pad1).
+Add C7 (footprint 'Capacitor_SMD:C_0603_1608Metric').
+Add C8 (footprint 'Capacitor_SMD:C_0603_1608Metric').
+Add C9 (footprint 'Capacitor_SMD:C_0603_1608Metric').
+Add C10 (footprint 'Capacitor_SMD:C_0603_1608Metric').
+Add C11 (footprint 'Capacitor_SMD:C_0603_1608Metric').
+Add C12 (footprint 'Capacitor_SMD:C_0603_1608Metric').
+Add C13 (footprint 'Capacitor_SMD:C_0603_1608Metric').
+Add C14 (footprint 'Capacitor_SMD:C_0603_1608Metric').
+Add D1 (footprint 'LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm').
+Update J1 symbol association from /e8161543-87b0-4193-885c-c2528b95de5d to /5031add7-d177-4df1-8faf-af11c82b4c9f.
+Update J1 sheetfile to 'wrist_pcb_revB.kicad_sch'.
+Reconnect via from /PWM_M_PNK to /DRV_TRIG1.
+Reconnect via from /PWM_M_PNK to /DRV_TRIG1.
+Reconnect J1 pin B12 from /GND to /BAT+.
+Reconnect J1 pin SH from /GND to /BAT+.
+Reconnect J1 pin SH from /GND to /BAT+.
+Reconnect via from /PWM_M_IDX to /DRV_EN.
+Reconnect J1 pin SH from /GND to /BAT+.
+Reconnect J1 pin A1 from /GND to /BAT+.
+Reconnect J1 pin SH from /GND to /BAT+.
+Reconnect via from /PWM_M_IDX to /DRV_EN.
+Reconnect J1 pin A12 from /GND to /BAT+.
+Reconnect J1 pin B1 from /GND to /BAT+.
+Reconnect copper zone 'GROUND' from /GND to /BAT+.
+Change J2 value from ZIF_5PIN to ZIF_20PIN.
+Update J2 symbol association from /67ad6280-e2c1-4f1f-8ddd-4f8f47164b40 to /979cafe6-7e9c-4bcc-94ff-7008a2556fa4.
+Update J2 sheetfile to 'wrist_pcb_revB.kicad_sch'.
+Reconnect J2 pin 4 from /NET_M_MID to /NET_HEAT.
+Reconnect J2 pin 3 from /NET_M_IDX to /NET_HEAT.
+Reconnect J2 pin 5 from /NET_M_RNG_PNK to /3V3.
+Reconnect J2 pin 2 from /NET_HEAT to /BAT+.
+Update J2 unit metadata.
+Add J2 'Do not place' fabrication attribute.
+Update Q1 symbol association from /0cfa033f-23cb-4efc-b92e-e7cea79fac79 to /463cb67f-ca2f-426a-8b4d-719a44958a46.
+Update Q1 sheetfile to 'wrist_pcb_revB.kicad_sch'.
+Reconnect Q1 pin 2 from /GND to /BAT+.
+Update R1 symbol association from /02023a28-845e-4088-bc0d-ec5c7b9f02dc to /39fa145b-624e-4cc9-a70c-fbb6b988f8c9.
+Update R1 sheetfile to 'wrist_pcb_revB.kicad_sch'.
+Add net /THERMISTOR_SENSE.
+Reconnect R1 pin 1 from /ADC_NTC to /THERMISTOR_SENSE.
+Update R2 symbol association from /db92e08e-345e-4bac-84c0-95b78ae44454 to /64a262cc-9005-48d3-847c-e58b9323df18.
+Update R2 sheetfile to 'wrist_pcb_revB.kicad_sch'.
+Update R3 symbol association from /e144f577-3f7b-486a-8b5d-fabf803bd097 to /0335a40b-e482-4517-9248-e29462fe137b.
+Update R3 sheetfile to 'wrist_pcb_revB.kicad_sch'.
+Reconnect R3 pin 1 from /GND to /BAT+.
+Update R4 symbol association from /a4704b35-bb87-47a6-83aa-9e73ef98ac30 to /e6b78cca-fd2b-4c92-a53d-82e0135d676b.
+Update R4 sheetfile to 'wrist_pcb_revB.kicad_sch'.
+Reconnect R4 pin 1 from /GND to /BAT+.
+Update R5 symbol association from /641eb333-e19c-4248-ba8f-79fc54b1e2c0 to /47644c00-9d4d-4644-9379-a7dd54d8113a.
+Update R5 sheetfile to 'wrist_pcb_revB.kicad_sch'.
+Reconnect R5 pin 1 from /GND to /BAT+.
+Add R6 (footprint 'Resistor_SMD:R_0603_1608Metric').
+Add R7 (footprint 'Resistor_SMD:R_0603_1608Metric').
+Add R8 (footprint 'Resistor_SMD:R_0603_1608Metric').
+Add R9 (footprint 'Resistor_SMD:R_0603_1608Metric').
+Add R10 (footprint 'Resistor_SMD:R_0603_1608Metric').
+Update U1 symbol association from /07d8cfc4-a11d-4109-b8b9-2759fa4b8136 to /8615317a-8491-4d14-8962-205d102b0570.
+Update U1 sheetfile to 'wrist_pcb_revB.kicad_sch'.
+Connect U1 pin 12 to /BAT+.
+Add net /I2C_SDA.
+Connect U1 pin 4 to /I2C_SDA.
+Add net /RGB_DATA.
+Connect U1 pin 38 to /RGB_DATA.
+Disconnect U1 pin 20.
+Add net /ADC_MUX2.
+Connect U1 pin 9 to /ADC_MUX2.
+Add net /ADC_MUX1.
+Reconnect U1 pin 8 from /ADC_NTC to /ADC_MUX1.
+Add net /MUX_S1.
+Connect U1 pin 40 to /MUX_S1.
+Reconnect U1 pin 1 from /GND to /BAT+.
+Add net /DRV_EN.
+Reconnect U1 pin 21 from /PWM_M_IDX to /DRV_EN.
+Add net /MUX_S0.
+Connect U1 pin 39 to /MUX_S0.
+Add net /DRV_TRIG1.
+Reconnect U1 pin 24 from /PWM_M_PNK to /DRV_TRIG1.
+Disconnect U1 pin 22.
+Connect U1 pin 11 to /BAT+.
+Add net /I2C_SCL.
+Connect U1 pin 3 to /I2C_SCL.
+Disconnect U1 pin 23.
+Update U1 unit metadata.
+Update U2 symbol association from /0f56b968-fccf-4b83-9785-c3559cec877e to /c6d6a999-e9be-4717-9dc3-9f20e4618aed.
+Update U2 sheetfile to 'wrist_pcb_revB.kicad_sch'.
+Reconnect U2 pin 3 from /GND to /BAT+.
+Update U3 symbol association from /d84b328a-53a7-43c8-b356-b1799dcbeb5a to /8c5dc89f-5f66-413b-9de7-30281c0a26ab.
+Update U3 sheetfile to 'wrist_pcb_revB.kicad_sch'.
+Reconnect U3 pin 2 from /GND to /BAT+.
+Add U5 (footprint 'Package_SO:TSSOP-16_4.4x5mm_P0.65mm').
+Reconnect copper zone from /GND to /BAT+.
+Reconnect via from /GND to /BAT+.
+Reconnect via from /GND to /BAT+.
+Reconnect via from /GND to /BAT+.
+Reconnect via from /GND to /BAT+.
+Reconnect via from /GND to /BAT+.
+Reconnect via from /GND to /BAT+.
+Reconnect via from /GND to /BAT+.
+Reconnect via from /GND to /BAT+.
+Reconnect via from /GND to /BAT+.
+Reconnect via from /GND to /BAT+.
+Reconnect via from /GND to /BAT+.
+Reconnect via from /GND to /BAT+.
+Reconnect via from /GND to /BAT+.
+Reconnect via from /GND to /BAT+.
+Reconnect via from /GND to /BAT+.
+Reconnect via from /GND to /BAT+.
+Reconnect via from /GND to /BAT+.
+Warning: No net found for component J1 pad B7 (no pin B7 in symbol).
+Warning: No net found for component J1 pad A8 (no pin A8 in symbol).
+Warning: No net found for component J1 pad B6 (no pin B6 in symbol).
+Warning: No net found for component J1 pad B8 (no pin B8 in symbol).
+Warning: No net found for component U1 pad 30 (no pin 30 in symbol).
+Warning: No net found for component U1 pad 58 (no pin 58 in symbol).
+Warning: No net found for component U1 pad 61 (no pin 61 in symbol).
+Warning: No net found for component U1 pad 61 (no pin 61 in symbol).
+Warning: No net found for component U1 pad 61 (no pin 61 in symbol).
+Warning: No net found for component U1 pad 54 (no pin 54 in symbol).
+Warning: No net found for component U1 pad 5 (no pin 5 in symbol).
+Warning: No net found for component U1 pad 29 (no pin 29 in symbol).
+Warning: No net found for component U1 pad 13 (no pin 13 in symbol).
+Warning: No net found for component U1 pad 32 (no pin 32 in symbol).
+Warning: No net found for component U1 pad 62 (no pin 62 in symbol).
+Warning: No net found for component U1 pad 14 (no pin 14 in symbol).
+Warning: No net found for component U1 pad 46 (no pin 46 in symbol).
+Warning: No net found for component U1 pad 61 (no pin 61 in symbol).
+Warning: No net found for component U1 pad 61 (no pin 61 in symbol).
+Warning: No net found for component U1 pad 6 (no pin 6 in symbol).
+Warning: No net found for component U1 pad 18 (no pin 18 in symbol).
+Warning: No net found for component U1 pad 57 (no pin 57 in symbol).
+Warning: No net found for component U1 pad 37 (no pin 37 in symbol).
+Warning: No net found for component U1 pad 63 (no pin 63 in symbol).
+Warning: No net found for component U1 pad 60 (no pin 60 in symbol).
+Warning: No net found for component U1 pad 41 (no pin 41 in symbol).
+Warning: No net found for component U1 pad 55 (no pin 55 in symbol).
+Warning: No net found for component U1 pad 61 (no pin 61 in symbol).
+Warning: No net found for component U2 pad 8 (no pin 8 in symbol).
+Warning: No net found for component U2 pad 9 (no pin 9 in symbol).
+Warning: No net found for component U2 pad 6 (no pin 6 in symbol).
+Warning: No net found for component U2 pad 9 (no pin 9 in symbol).
+Warning: No net found for component U2 pad 9 (no pin 9 in symbol).
+Warning: No net found for component U2 pad 1 (no pin 1 in symbol).
+Warning: No net found for component U2 pad 9 (no pin 9 in symbol).
+Warning: No net found for component U2 pad 2 (no pin 2 in symbol).
+Warning: No net found for component U2 pad 7 (no pin 7 in symbol).
+Warning: No net found for component U2 pad 9 (no pin 9 in symbol).
+Warning: No net found for component U1 pad 19 (no pin 19 in symbol).
+Warning: No net found for component U2 pad 9 (no pin 9 in symbol).
+Warning: No net found for component U2 pad 9 (no pin 9 in symbol).
+Warning: No net found for component U2 pad 9 (no pin 9 in symbol).
+Warning: No net found for component U1 pad 47 (no pin 47 in symbol).
+Warning: No net found for component U1 pad 53 (no pin 53 in symbol).
+Warning: No net found for component U1 pad 31 (no pin 31 in symbol).
+Warning: No net found for component U1 pad 48 (no pin 48 in symbol).
+Warning: No net found for component U3 pad 4 (no pin 4 in symbol).
+Warning: No net found for component U1 pad 36 (no pin 36 in symbol).
+Warning: No net found for component J2 pad MP (no pin MP in symbol).
+Warning: No net found for component U1 pad 17 (no pin 17 in symbol).
+Warning: No net found for component U1 pad 51 (no pin 51 in symbol).
+Warning: No net found for component J2 pad MP (no pin MP in symbol).
+Warning: No net found for component U1 pad 44 (no pin 44 in symbol).
+Warning: No net found for component U1 pad 65 (no pin 65 in symbol).
+Warning: No net found for component U1 pad 49 (no pin 49 in symbol).
+Warning: No net found for component U1 pad 56 (no pin 56 in symbol).
+Warning: No net found for component U1 pad 34 (no pin 34 in symbol).
+Warning: No net found for component U1 pad 52 (no pin 52 in symbol).
+Warning: No net found for component U1 pad 35 (no pin 35 in symbol).
+Warning: No net found for component U1 pad 42 (no pin 42 in symbol).
+Warning: No net found for component U1 pad 61 (no pin 61 in symbol).
+Warning: No net found for component U1 pad 61 (no pin 61 in symbol).
+Warning: No net found for component U1 pad 61 (no pin 61 in symbol).
+Warning: No net found for component U1 pad 50 (no pin 50 in symbol).
+Warning: No net found for component U1 pad 15 (no pin 15 in symbol).
+Warning: No net found for component U1 pad 10 (no pin 10 in symbol).
+Warning: No net found for component U1 pad 16 (no pin 16 in symbol).
+Warning: No net found for component U1 pad 28 (no pin 28 in symbol).
+Warning: No net found for component U1 pad 64 (no pin 64 in symbol).
+Warning: Via connected to unknown net (/PWM_M_MID).
+Warning: Via connected to unknown net (/PWM_M_MID).
+Warning: Via connected to unknown net (/PWM_M_MID).
+Warning: Via connected to unknown net (/PWM_M_MID).
+Warning: Via connected to unknown net (/PWM_M_RNG).
+Warning: Via connected to unknown net (/PWM_M_RNG).
+Warning: No net found for component U1 pad 7 (no pin 7 in symbol).
+Warning: No net found for component U1 pad 33 (no pin 33 in symbol).
+Warning: No net found for component U1 pad 45 (no pin 45 in symbol).
+Warning: No net found for component U1 pad 43 (no pin 43 in symbol).
+Warning: No net found for component U1 pad 59 (no pin 59 in symbol).
+Error: Cannot update J2 (footprint 'Connector_FFC-FPC:TE_1-1734839-0_1x20-1MP_P0.5mm_Horizontal' not found).
+Error: Cannot add U7 (footprint 'Package_SO:VSSOP-10_3.0x3.0mm_P0.5mm' not found).
+Error: Cannot add U6 (footprint 'Package_SO:VSSOP-10_3.0x3.0mm_P0.5mm' not found).
+Error: Cannot add U4 (footprint 'Package_SO:VSSOP-10_3.0x3.0mm_P0.5mm' not found).
+
+
+Info: Total warnings: 80, errors: 4.
